@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/assets/my.css"],"names":[],"mappings":"AAAA,QACI,YAAa,CACb,sBAAuB,CACvB,kBAEJ,CAEA,KACI,cACJ","file":"main.fa10811b.chunk.css","sourcesContent":[".center{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    \r\n}\r\n\r\nbody {\r\n    height: 100.2vh;\r\n}\r\n  "]}
