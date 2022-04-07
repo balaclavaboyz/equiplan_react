@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 const ButtonCatalogo = () => {
   return (
     <>
-    <Button size="lg" variant="outline-secondary" href="https://milvest.vesti.mobi">Catálogo</Button>{' '}
+    <Button size="lg" variant="outline-secondary" href="https://equiplan.orbitare.com.br/">Confira</Button>{' '}
     </>
   );
 };

@@ -1,12 +1,13 @@
+
 import React from "react";
 import ButtonCatalogo from "./ButtonCatalogo";
-const SubTitulo = () => {
+const Texto_galeria4 = () => {
   return (
     <div className="text-center">
-      <h2 className="display-5">Locação - Loja Comercial - 1 a 5 Mil Reais</h2>
+      <h2 className="display-5">Venda - Loja Comercial - Até 500 mil Reais</h2>
       <ButtonCatalogo />
       </div>
   );
 };
 
-export default SubTitulo;
+export default Texto_galeria4;

@@ -5,8 +5,7 @@ import "../assets/my.css";
 const Titulo = () => {
   return (
       <div className="text-center">
-        <h1>Moda Feminina Atacado Bom Retiro</h1>
-        <h2>Criamos, Produzimos e Vendemos em Atacado</h2>
+        <h1>Locação - Casa Residencial - 1 a 5 Mil Reais</h1>
         <ButtonCatalogo />
       </div>
   );

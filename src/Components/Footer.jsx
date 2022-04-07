@@ -7,7 +7,8 @@ const Footer = () => {
   const botaoStyleWhatsapp = {
     position: "fixed",
     zIndex: 99,
-    bottom: "104px",
+    bottom: "20px",
+    // bottom: "104px",
     right: "20px",
   };
   const botaoStyleInsta = {
@@ -20,21 +21,21 @@ const Footer = () => {
     <>
       <div className="text-center">
           <a href="/politica">Política de Privacidade</a>
-        <p>
+        {/* <p>
           <i>Criamos , Produzimos e Vendemos em Atacado</i> | R. Aimorés, 101 -
           Bom Retiro, São Paulo - SP, 01122-011 | milvestarquivo@gmail.com.br
-        </p>
+        </p> */}
         <p>Desenvolvido por Peter Kim</p>
       </div>
-      <a href="https://wa.me/5511942419476" style={botaoStyleWhatsapp}>
+      <a href="https://wa.me/5511973364612" style={botaoStyleWhatsapp}>
         <Img src={whats} alt="whatsapp contato" width="64" height="64"></Img>
       </a>
-      <a
+      {/* <a
         href="https://www.instagram.com/milvest_oficial/"
         style={botaoStyleInsta}
       >
         <Img src={insta} alt="instagram logo" width="64" height="64"></Img>
-      </a>
+      </a> */}
     </>
   );
 };

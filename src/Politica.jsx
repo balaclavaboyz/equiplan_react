@@ -7,9 +7,9 @@ const Politica = () => {
       <h2>Política Privacidade</h2>
       <br />
       <p>
-        A sua privacidade é importante para nós. É política do Milvest respeitar
+        A sua privacidade é importante para nós. É política do Equiplan respeitar
         a sua privacidade em relação a qualquer informação sua que possamos
-        coletar no site <a href="http://www.milvest.com.br">Milvest</a>, e
+        coletar no site <a href="http://www.equiplan.com.br">Equiplan</a>, e
         outros sites que possuímos e operamos.
       </p>
       <p>
@@ -46,7 +46,7 @@ const Politica = () => {
         pessoais, entre em contacto connosco.
       </p>
       <br />
-      <h2>Política de Cookies Milvest</h2>
+      <h2>Política de Cookies Equiplan</h2>
       <br />
       <h3>O que são cookies?</h3>
       <p>
@@ -128,7 +128,7 @@ const Politica = () => {
       <h3>Compromisso do Usuário</h3>
       <p>
         O usuário se compromete a fazer uso adequado dos conteúdos e da
-        informação que o Milvest oferece no site e com caráter enunciativo, mas
+        informação que o Equiplan oferece no site e com caráter enunciativo, mas
         não limitativo:
       </p>
       <ul>
@@ -145,7 +145,7 @@ const Politica = () => {
         </li>
         <li>
           C) Não causar danos aos sistemas físicos (hardwares) e lógicos
-          (softwares) do Milvest, de seus fornecedores ou terceiros, para
+          (softwares) do Equiplan, de seus fornecedores ou terceiros, para
           introduzir ou disseminar vírus informáticos ou quaisquer outros
           sistemas de hardware ou software que sejam capazes de causar danos
           anteriormente mencionados.
