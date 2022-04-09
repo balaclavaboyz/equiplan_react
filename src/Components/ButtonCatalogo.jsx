@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-const ButtonCatalogo = () => {
+const ButtonCatalogo = (props) => {
   return (
     <>
-    <Button size="lg" variant="outline-secondary" href="https://equiplan.orbitare.com.br/">Confira</Button>{' '}
+    <Button size="lg"  variant="outline-secondary" ><a style={{textDecoration:"none",color:"black"}} href={props.link}>Confira</a></Button>{' '}
     </>
   );
 };

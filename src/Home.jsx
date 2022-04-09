@@ -15,7 +15,7 @@ const Home=()=>{
         <Container>
         <Row className="center" xs={1} md={2}>
           <Col >
-            <Titulo />
+            <Titulo/>
           </Col>
           <Col>
             <Galeria1 />
@@ -24,7 +24,7 @@ const Home=()=>{
         <Row className="center" xs={1} md={2} >
           
         <Col md={{order:'last'}}>
-            <SubTitulo />
+            <SubTitulo/>
           </Col>
           <Col md={{order:'first'}} >
             <Galeria2 />
@@ -37,7 +37,7 @@ const Home=()=>{
             <Galeria3 />
           </Col>
           <Col md={{order:'first'}} >
-            <Texto_galeria3 />
+            <Texto_galeria3/>
           </Col>
           
         </Row>
