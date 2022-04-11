@@ -14,8 +14,8 @@ const Menu = () => {
         </Link>
         {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
             <p>CRECI - J 35272</p>
-            <p>TELEFONE/WHATSAPP <a href="https://wa.me/5511973364612">(11)97336-4612</a></p>
-            <p>EQUIPLAN@EQUIPLAN.COM.BR<a href="mailto:EQUIPLAN@EQUIPLAN.COM.BR"></a></p>
+            {/*<p>TELEFONE/WHATSAPP <a href="https://wa.me/5511973364612">(11)97336-4612</a></p>
+            <p>EQUIPLAN@EQUIPLAN.COM.BR<a href="mailto:EQUIPLAN@EQUIPLAN.COM.BR"></a></p>*/}
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
