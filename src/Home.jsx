@@ -3,8 +3,6 @@ import { Container, Row,Col } from 'react-bootstrap'
 import Titulo from './Components/Titulo'
 import Galeria1 from './Components/Galeria1'
 import Galeria2 from './Components/Galeria2'
-import Galeria3 from './Components/Galeria3'
-import Galeria4 from './Components/Galeria4'
 import SubTitulo from './Components/SubTitulo'
 import './assets/my.css'
 
