@@ -6,8 +6,6 @@ import Galeria2 from './Components/Galeria2'
 import Galeria3 from './Components/Galeria3'
 import Galeria4 from './Components/Galeria4'
 import SubTitulo from './Components/SubTitulo'
-import Texto_galeria3 from './Components/Texto_galeria3'
-import Texto_galeria4 from './Components/Texto_galeria4'
 import './assets/my.css'
 
 const Home=()=>{
