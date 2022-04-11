@@ -31,27 +31,6 @@ const Home=()=>{
           </Col>
           
         </Row>
-        <Row className="center" xs={1} md={2} >
-          
-        <Col md={{order:'last'}}>
-            <Galeria3 />
-          </Col>
-          <Col md={{order:'first'}} >
-            <Texto_galeria3/>
-          </Col>
-          
-        </Row>
-        <Row className="center" xs={1} md={2} >
-          
-        <Col md={{order:'last'}}>
-            <Texto_galeria4/>
-          </Col>
-          <Col md={{order:'first'}} >
-            <Galeria4 />
-          </Col>
-          
-        </Row>
-      </Container>
     )
 }
 
