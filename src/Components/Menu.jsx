@@ -18,9 +18,11 @@ const Menu = () => {
             <p>EQUIPLAN@EQUIPLAN.COM.BR<a href="mailto:EQUIPLAN@EQUIPLAN.COM.BR"></a></p>*/}
          <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link  as={Link} to="/">Home</Nav.Link>
-            <Nav.Link  as={Link} to="/faq">FAQ</Nav.Link>{/*
+          <Nav className="me-auto" class="flex justifyContent center alignItems center">
+            <Nav.Link  as={Link} to="/" style={{fontSize:24}}>HOME</Nav.Link>
+            <Nav.Link  as={Link} to="/faq" style={{fontSize:24}}>FAQ</Nav.Link>
+	<Nav.Link  as={Link} to="/contato" style={{fontSize:24}}>CONTATO</Nav.Link>
+{/*
             <Nav.Link href="https://equiplan.orbitare.com.br/">Catálogo</Nav.Link>
             <Nav.Link  as={Link} to="/politica">Política de Privacidade</Nav.Link>*/}
           </Nav>

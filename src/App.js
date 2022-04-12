@@ -7,6 +7,7 @@ import Home from "./Home";
 import Politica from "./Politica";
 import Faq from "./Components/Faq";
 import "./assets/my.css"
+import contato from "./Components/contato"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route path="/faq" component={Faq} />
         <Route path="/politica" component={Politica} />
+<Route path="/contato" component={contato} />
       </Switch>
       <Footer/>
     </>
