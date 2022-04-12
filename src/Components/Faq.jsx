@@ -5,24 +5,22 @@ const Faq = () => {
   return (
     <Container>
       <h1>Bem-vindo ao FAQ!</h1>
-      <Row>
-        <h2>Atacado de quantas peças?</h2>
-        <p>12 peças</p>
+	<Row>
+        <h2>Quais tipos de produtos e Investimentos, a Equiplan Oferece?</h2>
+        <p>Aquisição, Venda e Locação em Cidade de São Paulo:</p>
+	<p>Lojas, Casas Comerciais e Casas Residenciais.</p>
+	<p>Galpões, Terrenos e Áreas.</p>
       </Row>
       <Row>
-        <h2>Qual horário comercial?</h2>
-        <p>
-          7:30 às 17:30, Segunda a Sexta - Obs: Atendiamento para cliente
-          atacado
-        </p>
+        <h2>Que tipo de Consultoria, a Equiplan Oferece?</h2>
+        <p>Consultoria em:</p>
+	<p>Escolha da Localização para o Seu Negócio.</p>
+	<p>Acompanhamento no Crescimento dos Envolvidos.</p>
+	<p>Crescimento - Expansão - Multiplicação do Seu negócio.</p>
       </Row>
       <Row>
-        <h2>Como faz para comprar no atacado?</h2>
-        <p>Ter CNPJ no ramo de moda</p>
-      </Row>
-      <Row>
-        <h2>Eu consigo comprar pelo o Whatsapp?</h2>
-        <p>Sim pelo o Whatsapp, o App da Milvest ou prensencial</p>
+        <h2>Qual Horário de Atendimento?</h2>
+        <p>Segunda a Sexta.</p>
       </Row>
     </Container>
   );

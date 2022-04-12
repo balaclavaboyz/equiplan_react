@@ -16,15 +16,15 @@ const Menu = () => {
             <p>CRECI - J 35272</p>
             {/*<p>TELEFONE/WHATSAPP <a href="https://wa.me/5511973364612">(11)97336-4612</a></p>
             <p>EQUIPLAN@EQUIPLAN.COM.BR<a href="mailto:EQUIPLAN@EQUIPLAN.COM.BR"></a></p>*/}
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link  as={Link} to="/">Home</Nav.Link>
-            <Nav.Link  as={Link} to="/faq">FAQ</Nav.Link>
+            <Nav.Link  as={Link} to="/faq">FAQ</Nav.Link>{/*
             <Nav.Link href="https://equiplan.orbitare.com.br/">Catálogo</Nav.Link>
-            <Nav.Link  as={Link} to="/politica">Política de Privacidade</Nav.Link>
+            <Nav.Link  as={Link} to="/politica">Política de Privacidade</Nav.Link>*/}
           </Nav>
-        </Navbar.Collapse> */}
+        </Navbar.Collapse> 
       </Container>
     </Navbar>
   );
