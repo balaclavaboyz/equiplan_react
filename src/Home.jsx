@@ -9,7 +9,29 @@ import './assets/my.css'
 const Home=()=>{
     return(
         <Container>
-        <Row className="center" xs={1} md={2}>
+
+          <div id="body">
+            <div className="titulo">
+              <Titulo/>
+            </div>
+            <div className="galeria">
+              <Galeria1></Galeria1>
+            </div>
+            <div className="galeria2">
+              <Galeria2></Galeria2>
+            </div>
+            <div className="subtitulo">
+              <SubTitulo></SubTitulo>
+            </div>
+            <div className="footer">
+              <div className="text-center">
+                  <a href="/politica">Política de Privacidade</a>
+                <p>Desenvolvido por Peter Kim</p>
+              </div>
+            </div>
+          </div>
+
+        {/* <Row className="center" xs={1} md={2}>
           <Col >
             <Titulo/>
           </Col>
@@ -26,7 +48,7 @@ const Home=()=>{
             <Galeria2 />
           </Col>
           
-        </Row>
+        </Row> */}
 	</Container>
     )
 }
