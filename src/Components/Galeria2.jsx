@@ -16,19 +16,21 @@ const galeria2 = importAll(
 const Galeria2 = () => {
   return (
     <>
-      <Carousel>
-        {Object.entries(galeria2).map((t, k) =>
-          Object.entries(t[1]).map((t, k) => (
-            <Carousel.Item key={k}>
-              <Image
-                className="d-block w-100"
-                src={t[1]}
-                alt="imagens_da_galeria_principal"
-              />
-            </Carousel.Item>
-          ))
-        )}
-      </Carousel>
+        <Carousel>
+          {Object.entries(galeria2).map((t, k) =>
+            Object.entries(t[1]).map((t, k) => (
+              <Carousel.Item key={k}>
+                <Image
+                  className="d-block w-100"
+                  src={t[1]}
+                  alt="imagens_da_galeria_principal"
+                />
+              </Carousel.Item>
+            ))
+          )}
+        </Carousel>
+
+
     </>
   );
 };

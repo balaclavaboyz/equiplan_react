@@ -4,12 +4,14 @@ import { Container, Row } from "react-bootstrap";
 const Faq = () => {
   return (
     <Container>
+      <br></br>
       <h1>Bem-vindo ao Equiplan!</h1>
-	<Row>
+      <br></br>
+      <Row>
         <h2>Escreva suas dúvidas</h2>
-        <p>Whatsapp:(11)97336-4612</p>
-	<p>E-mail: equiplan@equiplan.com.br</p>
-	<p>Contato telefonico:(11)90280-9773</p>
+        <p>Whatsapp: <a href="https://wa.me/5511973364612">(11)97336-4612</a></p>
+        <p>E-mail: <a href="mailto:equiplan@equiplan.com.br">equiplan@equiplan.com.br</a> </p>
+        <p>Contato telefonico: <a href="tel:11902809773">(11)90280-9773</a></p>
       </Row>
     </Container>
   );

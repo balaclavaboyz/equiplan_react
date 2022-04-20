@@ -21,14 +21,15 @@ const Galeria = () => {
         Object.entries(galeria1).map((t, k) =>
           Object.entries(t[1]).map((t, k) => (
             <Carousel.Item key={k}>
-              <Image
-                className="d-block w-100"
-                src={t[1]}
-                alt="imagens_da_galeria_principal"
-              />
+                <Image
+                  className="d-block w-100"
+                  src={t[1]}
+                  alt="imagens_da_galeria_principal"
+                />
+
             </Carousel.Item>
           ))
-        )
+          )
         }
       </Carousel>
     </>

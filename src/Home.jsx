@@ -8,9 +8,9 @@ import './assets/my.css'
 
 const Home=()=>{
     return(
-        <Container>
-
-          <div id="body">
+        
+        <>
+          <div id="container-imgs">
             <div className="titulo">
               <Titulo/>
             </div>
@@ -23,33 +23,10 @@ const Home=()=>{
             <div className="subtitulo">
               <SubTitulo></SubTitulo>
             </div>
-            <div className="footer">
-              <div className="text-center">
-                  <a href="/politica">Política de Privacidade</a>
-                <p>Desenvolvido por Peter Kim</p>
-              </div>
-            </div>
-          </div>
 
-        {/* <Row className="center" xs={1} md={2}>
-          <Col >
-            <Titulo/>
-          </Col>
-          <Col>
-            <Galeria1 />
-          </Col>
-        </Row>
-        <Row className="center" xs={1} md={2} >
-          
-        <Col md={{order:'last'}}>
-            <SubTitulo/>
-          </Col>
-          <Col md={{order:'first'}} >
-            <Galeria2 />
-          </Col>
-          
-        </Row> */}
-	</Container>
+        </div>
+        </>
+
     )
 }
 

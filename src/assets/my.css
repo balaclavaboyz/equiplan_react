@@ -1,57 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+}
+body {
+    min-height: 100.2vh;
+    width: 100%;
+    
+}
+
+.raiz{
+    /* header container-imgs footer */
+    display: grid;
+    grid-template-areas: "header" "container-imgs" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+}
+  
+#header{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo menu menu" "creci creci creci";
+    grid-gap:5px;
+    align-items: center;
+    justify-items: center;
+    grid-area: "header";
+}
+#logo{
+    grid-area: "logo";
+}
+#menu{
+    grid-area: 'menu';
+}
+#creci{
+    grid-column: span 3;
+    grid-area: 'creci';
+    grid-column-start: 1;
+
+}
+#container-imgs{
+    display:grid;
+    grid-template-areas: "titulo galeria1 subtitulo galeria2"
+                         "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    grid-area: 'container-imgs';
+}
+#titulo{
+    grid-area: titulo;
+}
+#subtitulo{
+    grid-area: subtitulo;
+}
+#galeria1{
+    grid-area: galeria1;
+}
+#galeria2{
+    grid-area: galeria2;
+}
+.footer{
+    display: grid;
+    grid-template-areas: "politica" "legenda";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-area: footer;
+    align-items: center;
+}
+#politica{
+    grid-area: politica;
+}
+#legenda{
+    grid-area: legenda;
+}
+
+@media screen and (max-width: 1024px) {
+    #container-imgs{
+        display: grid;
+        grid-template-areas:"titulo "
+                            "galeria1" 
+                            "subtitulo "
+                            "galeria2"
+                            "footer ";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr auto auto;
+        align-items: center;
+        place-items: center;
+        padding-top: 3rem;
+
+    }
+    #container-imgs>.titulo>.text-center{
+        padding-bottom: 1rem;
+    }
+    #container-imgs>.subtitulo>.text-center{
+        padding-bottom: 1rem;
+    }
+    #container-imgs>.galeria{
+        padding-bottom: 1rem;
+    }
+    #container-imgs>.subtitulo>.text-center>h2{
+        padding-top: 1rem;
+    }
+    #menu{
+        display: grid;
+        grid-column: span 2;
+    }
+}
+
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
-
-body {
-    height: 100.2vh;
-    width: 1530px;
-}
-  
-#header{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 128px 1fr 1fr;
-    grid-area: logo menu menu
-               creci creci creci ;
-    grid-gap:5px
-}
-#logo{
-    grid-template-areas: logo;
-}
-#menu{
-    grid-column: span 2;
-    grid-template-areas: menu;
-}
-#creci{
-    grid-column: span 3;
-    grid-template-areas: creci;
-}
-#body{
-    display:grid;
-    grid-template-areas: titulo galeria1 
-                         subtitulo galeria2
-                         footer footer;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
-}
-#titulo{
-    grid-template-areas: titulo;
-}
-#subtitulo{
-    grid-template-areas: subtitulo;
-}
-#galeria1{
-    grid-template-areas: galeria1;
-}
-#galeria2{
-    grid-template-areas: galeria2;
-}
-#footer{
-    grid-template-areas: footer;
 }

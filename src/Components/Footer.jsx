@@ -11,12 +11,6 @@ const Footer = () => {
     // bottom: "104px",
     right: "20px",
   };
-  const botaoStyleInsta = {
-    position: "fixed",
-    zIndex: 99,
-    bottom: "20px",
-    right: "20px",
-  };
   return (
     <>
       <a href="https://wa.me/5511973364612" style={botaoStyleWhatsapp}>
