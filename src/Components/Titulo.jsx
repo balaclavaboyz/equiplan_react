@@ -5,7 +5,7 @@ import "../assets/my.css";
 const Titulo = (props) => {
   return (
       <div className="text-center">
-        <h1 style={{fontSize:32}}>Locação: Lojas/Casas</h1>
+        <h1 style={{fontSize:32}}>Locação: Comercial</h1>
         <ButtonCatalogo link="https://equiplan.orbitare.com.br"/>
       </div>
   );
