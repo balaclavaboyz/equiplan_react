@@ -8,6 +8,7 @@ import Politica from "./Politica";
 import Faq from "./Components/Faq";
 import "./assets/my.css"
 import contato from "./Components/contato"
+import missao from "./Components/missao"
 
 const App = () => {
   return (
@@ -20,11 +21,12 @@ const App = () => {
           <Route path="/faq" component={Faq} />
           <Route path="/politica" component={Politica} />
           <Route path="/contato" component={contato} />
+	<Route path="/missao" component={missao} />
         </Switch>
         <FloatButton/>
         <div className="footer">
           <a id="politica" href="/politica">Política de Privacidade</a>
-          <p id="legenda">Desenvolvido por Peter Kim</p>
+          <p id="legenda">Peter Kim 2022</p>
         </div>
 
       </div>

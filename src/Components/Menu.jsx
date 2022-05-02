@@ -10,7 +10,7 @@ const Menu = () => {
     <>
       <div id="header">
           <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit' }}>
-            <Img src={logo} alt="logo_milvest" width="128px"/>
+            <Img src={logo} alt="logo_milvest" width="80px"/>
           </Link>
         <div id="menu">
           <Navbar expand="lg" >
@@ -20,6 +20,7 @@ const Menu = () => {
                 <Nav.Link  as={Link} to="/" style={{fontSize:"1rem"}}>HOME</Nav.Link>
                 <Nav.Link  as={Link} to="/faq" style={{fontSize:"1rem"}} >FAQ</Nav.Link>
                 <Nav.Link  as={Link} to="/contato" style={{fontSize:"1rem"}}>CONTATO</Nav.Link>
+<Nav.Link  as={Link} to="/missao" style={{fontSize:"1rem"}}>MISSÃO</Nav.Link>
               </Nav>
             </Navbar.Collapse> 
           </Navbar>
