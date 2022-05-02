@@ -11,8 +11,8 @@ const Faq = () => {
         <h2>Quais tipos de produtos e Investimentos, a Equiplan Oferece?</h2>
         <p></p>
         <p>Aquisição, Venda e Locação em Cidade de São Paulo:</p>
-	<p>Lojas, Casas Comerciais e Casas Residenciais.</p>
-	<p>Galpões, Terrenos e Áreas.</p>
+	<p>Lojas - Casas Comerciais</p>
+	<p>Galpões - Terrenos - Áreas.</p>
       </Row>
       <Row>
         <h2>Que tipo de Consultoria, a Equiplan Oferece?</h2>
