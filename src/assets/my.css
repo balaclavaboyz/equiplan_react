@@ -1,120 +1,123 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    
-}
 body {
     min-height: 100.2vh;
     width: 100%;
-    
 }
 
-.raiz{
+.raiz {
     /* header container-imgs footer */
     display: grid;
-    grid-template-areas: "header" "container-imgs" "footer";
+    grid-template-areas:
+        "header"
+        "container-imgs"
+        "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-rows: auto 70% auto;
 }
-  
-#header{
+.footer {
+    display: grid;
+    place-items: center;
+    grid-area: "footer";
+    grid-column: span 4;
+}
+
+#header {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "logo menu menu" "creci creci creci";
-    grid-gap:5px;
+    grid-gap: 5px;
     align-items: center;
     justify-items: center;
     grid-area: "header";
 }
-#logo{
+#logo {
     grid-area: "logo";
 }
-#menu{
-    grid-area: 'menu';
+#menu {
+    grid-area: "menu";
 }
-#creci{
+#creci {
     grid-column: span 3;
-    grid-area: 'creci';
+    grid-area: "creci";
     grid-column-start: 1;
-
 }
-#container-imgs{
-    display:grid;
-    grid-template-areas: "titulo galeria1 subtitulo galeria2"
-                         "footer footer footer footer";
+#container-imgs {
+    display: grid;
+    grid-template-areas:
+        "titulo galeria1 subtitulo galeria2";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr;
     place-items: center;
-    grid-area: 'container-imgs';
+    grid-area: container-imgs;
 }
-#titulo{
+#titulo {
     grid-area: titulo;
 }
-#subtitulo{
+#subtitulo {
     grid-area: subtitulo;
 }
-#galeria1{
+#galeria1 {
     grid-area: galeria1;
 }
-#galeria2{
+#galeria2 {
     grid-area: galeria2;
 }
-.footer{
-    display: grid;
-    grid-template-areas: "politica" "legenda";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    grid-area: footer;
-    align-items: center;
-}
-#politica{
+#politica {
     grid-area: politica;
 }
-#legenda{
+#legenda {
     grid-area: legenda;
 }
 
 @media screen and (max-width: 1024px) {
-    #container-imgs{
+    .raiz {
+        /* header container-imgs footer */
         display: grid;
-        grid-template-areas:"titulo "
-                            "galeria1" 
-                            "subtitulo "
-                            "galeria2"
-                            "footer ";
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr auto auto;
-        align-items: center;
+        grid-template-areas:
+            "header"
+            "container-imgs"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(150px,auto);
+    }
+    #container-imgs {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "galeria1"
+            "subtitulo"
+            "galeria2";
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(auto,4);
         place-items: center;
-        padding-top: 3rem;
-
+        grid-area: container-imgs;
     }
-    #container-imgs>.titulo>.text-center{
+    #container-imgs > .titulo > .text-center {
         padding-bottom: 1rem;
     }
-    #container-imgs>.subtitulo>.text-center{
+    #container-imgs > .subtitulo > .text-center {
         padding-bottom: 1rem;
-    }
-    #container-imgs>.galeria{
-        padding-bottom: 1rem;
-    }
-    #container-imgs>.subtitulo>.text-center>h2{
         padding-top: 1rem;
     }
-    #menu{
+    #container-imgs > .galeria {
+        padding-bottom: 1rem;
+    }
+    #container-imgs > .subtitulo > .text-center > h2 {
+        padding-top: 1rem;
+    }
+    #menu {
         display: grid;
         grid-column: span 2;
     }
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
