@@ -25,7 +25,6 @@ const App = () => {
         </Switch>
         <FloatButton/>
         <div className="footer">
-          <a id="politica" href="/politica">Política de Privacidade</a>
           <p id="legenda">Peter Kim 2022</p>
         </div>
 
