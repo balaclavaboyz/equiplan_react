@@ -1,5 +1,4 @@
 import Menu from "./Components/Menu";
-import { Container } from "react-bootstrap";
 import Header from "./Components/Header";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
@@ -8,7 +7,6 @@ import Faq from "./Components/Faq";
 import "./assets/my.css";
 import contato from "./Components/contato";
 import missao from "./Components/missao";
-import Footer from './Components/Footer'
 
 const App = () => {
   return (

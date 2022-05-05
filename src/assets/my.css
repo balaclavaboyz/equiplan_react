@@ -16,7 +16,7 @@ body {
         "container-imgs"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 70% auto;
+    grid-template-rows: 1fr 1fr auto;
 }
 .footer {
     display: grid;
