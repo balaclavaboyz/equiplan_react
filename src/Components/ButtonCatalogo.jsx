@@ -4,17 +4,17 @@ import Button from "react-bootstrap/Button";
 const ButtonCatalogo = () => {
     return (
         <>
-        <div className="d-grid">
 
-            <Button className="botaoDentroImagem" size="lg" variant="light">
                 <a
                     style={{ textDecoration: "none", color: "black" }}
                     href={'https://equiplan.orbitare.com.br'}
                     >
+        <div className="d-grid">
+            <Button className="botaoDentroImagem" size="lg" variant="light">
                     Confira
-                </a>
             </Button>{" "}
         </div>
+                </a>
         </>
     );
 };
