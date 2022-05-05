@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-const ButtonCatalogo = (props) => {
+const ButtonCatalogo = () => {
     return (
         <>
         <div className="d-grid">
@@ -9,7 +9,7 @@ const ButtonCatalogo = (props) => {
             <Button className="botaoDentroImagem" size="lg" variant="light">
                 <a
                     style={{ textDecoration: "none", color: "black" }}
-                    href={props.link}
+                    href={'https://equiplan.orbitare.com.br'}
                     >
                     Confira
                 </a>

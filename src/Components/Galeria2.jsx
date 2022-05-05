@@ -27,7 +27,7 @@ const Galeria2 = () => {
                   alt="imagens_da_galeria_principal"
                 />
             <Carousel.Caption>
-              <ButtonCatalogo link='https://equiplan.orbitare.com.br'></ButtonCatalogo>
+              <ButtonCatalogo></ButtonCatalogo>
             </Carousel.Caption>
               </Carousel.Item>
             ))
