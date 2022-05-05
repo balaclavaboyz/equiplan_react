@@ -9,6 +9,7 @@ const Faq = () => {
       <br></br>
       <Row>
         <h2>Criar, Realizar e Multiplicar Oportunidades</h2>
+        <p></p>
         <p>Whatsapp: <a href="https://wa.me/5511973364612">(11)97336-4612</a></p>
         <p>E-mail: <a href="mailto:equiplan@equiplan.com.br">equiplan@equiplan.com.br</a> </p>
         <p>Contato telefonico: <a href="tel:11902809773">(11)90280-9773</a></p>
