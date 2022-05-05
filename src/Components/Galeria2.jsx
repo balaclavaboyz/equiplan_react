@@ -17,7 +17,7 @@ const galeria2 = importAll(
 const Galeria2 = () => {
   return (
     <>
-        <Carousel>
+        <Carousel id="carousel2">
           {Object.entries(galeria2).map((t, k) =>
             Object.entries(t[1]).map((t, k) => (
               <Carousel.Item key={k}>

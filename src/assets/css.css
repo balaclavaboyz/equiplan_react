@@ -13,3 +13,8 @@ body {
 #footer{
     place-content: center;
 }
+@media screen and (min-width:1024px){
+    #carousel2{
+        margin-top: 1em;
+    }
+}
