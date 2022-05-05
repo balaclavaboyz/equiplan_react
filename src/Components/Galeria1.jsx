@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Image } from "react-bootstrap";
+import ButtonCatalogo from "./ButtonCatalogo";
 
 function importAll(r) {
   let images = {};
@@ -26,6 +27,9 @@ const Galeria = () => {
                   src={t[1]}
                   alt="imagens_da_galeria_principal"
                 />
+            <Carousel.Caption>
+              <ButtonCatalogo link='https://equiplan.orbitare.com.br'></ButtonCatalogo>
+            </Carousel.Caption>
 
             </Carousel.Item>
           ))

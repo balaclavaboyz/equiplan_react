@@ -12,10 +12,10 @@ const Home = () => {
                 <Row>
                     <Col>
                         <Galeria1></Galeria1>
-                    </Col>
-                    <Col>
                         <Galeria2></Galeria2>
                     </Col>
+                    {/* <Col>
+                    </Col> */}
                 </Row>
             </Container>
                 {/* <Titulo />
