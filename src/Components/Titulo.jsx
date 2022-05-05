@@ -1,6 +1,5 @@
 import React from "react";
 import ButtonCatalogo from "./ButtonCatalogo";
-import "../assets/my.css";
 
 const Titulo = (props) => {
   return (

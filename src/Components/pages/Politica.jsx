@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 const Politica = () => {
   return (
     <Container>
+      <br />
       <h2>Política Privacidade</h2>
       <br />
       <p>

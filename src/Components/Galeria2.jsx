@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel,Image } from "react-bootstrap";
+import ButtonCatalogo from "./ButtonCatalogo";
 
 function importAll(r) {
   let images = {};
@@ -16,7 +17,7 @@ const galeria2 = importAll(
 const Galeria2 = () => {
   return (
     <>
-        <Carousel>
+        <Carousel id="carousel2">
           {Object.entries(galeria2).map((t, k) =>
             Object.entries(t[1]).map((t, k) => (
               <Carousel.Item key={k}>
@@ -25,6 +26,9 @@ const Galeria2 = () => {
                   src={t[1]}
                   alt="imagens_da_galeria_principal"
                 />
+            <Carousel.Caption>
+              <ButtonCatalogo></ButtonCatalogo>
+            </Carousel.Caption>
               </Carousel.Item>
             ))
           )}
