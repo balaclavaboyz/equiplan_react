@@ -8,19 +8,19 @@ const Footer = () => {
       <div className="footer_wrapper">
         <div className="link_rapidos">
           <Link to="/">
-            <button>HOME</button>
+            <a aria-label="Home">HOME</a>
           </Link>
           <Link to="/faq">
-            <button>FAQ</button>
+            <a aria-label="Faq">FAQ</a>
           </Link>
           <Link to="/contato">
-            <button>CONTATO</button>
+            <a aria-label="Contato">CONTATO</a>
           </Link>
           <Link to="/missao">
-            <button>MISSÃO</button>
+            <a aria-label="missão">MISSÃO</a>
           </Link>
           <Link to="/politica">
-            <button>POLÍTICA DE PRIVACIDADE</button>
+            <a aria-label="politica">POLÍTICA DE PRIVACIDADE</a>
           </Link>
         </div>
         <div className="copy">
