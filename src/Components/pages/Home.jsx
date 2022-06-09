@@ -8,21 +8,10 @@ import SubTitulo from "../SubTitulo";
 const Home = () => {
     return (
         <>
-            <Container>
-                <Row>
-                    <Col>
-                        <Galeria1></Galeria1>
-                        <Galeria2></Galeria2>
-                    </Col>
-                    {/* <Col>
-                    </Col> */}
-                </Row>
-            </Container>
-                {/* <Titulo />
+            <div className="galeria_wrapper">
                 <Galeria1></Galeria1>
                 <Galeria2></Galeria2>
-                <SubTitulo></SubTitulo>
-                <Footer></Footer> */}
+            </div>
         </>
     );
 };

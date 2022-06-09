@@ -10,28 +10,40 @@ import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 
 const App = () => {
-    return (
-        <>
-            <Container>
-                <Row>
-                    <Menu />
-                </Row>
-                <Row>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/faq" component={Faq} />
-                        <Route path="/politica" component={Politica} />
-                        <Route path="/contato" component={contato} />
-                        <Route path="/missao" component={missao} />
-                    </Switch>
-                </Row>
-                <Row id="footer">
-                    <Footer></Footer>
-                </Row>
-            </Container>
-            <WhatsappIcon></WhatsappIcon>
-        </>
-    );
+  return (
+    <>
+      <div className="main">
+        <Menu></Menu>
+        <div className="content_wrapper">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/faq" component={Faq} />
+            <Route path="/politica" component={Politica} />
+            <Route path="/contato" component={contato} />
+            <Route path="/missao" component={missao} />
+          </Switch>
+        </div>
+      </div>
+      <Footer></Footer>
+        <WhatsappIcon></WhatsappIcon>
+      {/* <Container>
+        <Row>
+          <Menu />
+        </Row>
+        <Row>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/faq" component={Faq} />
+            <Route path="/politica" component={Politica} />
+            <Route path="/contato" component={contato} />
+            <Route path="/missao" component={missao} />
+          </Switch>
+        </Row>
+      </Container>
+      <Footer></Footer>
+      <WhatsappIcon></WhatsappIcon> */}
+    </>
+  );
 };
 
 export default App;

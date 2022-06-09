@@ -7,7 +7,7 @@ const Footer = () => {
   const botaoStyleWhatsapp = {
     position: "fixed",
     zIndex: 99,
-    bottom: "20px",
+    bottom: "10px",
     // bottom: "104px",
     right: "20px",
   };
