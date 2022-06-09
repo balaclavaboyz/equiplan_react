@@ -1,5 +1,4 @@
 import React from "react";
-import insta from "../assets/flutuante/instagram.svg";
 import whats from "../assets/flutuante/whatsapp.svg";
 import Img from "react-cool-img";
 

@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/my.css";
-import whatsappLogo from "../assets/black_whatsapp.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,19 +8,19 @@ const Footer = () => {
       <div className="footer_wrapper">
         <div className="link_rapidos">
           <Link to="/">
-            <a>HOME</a>
+            <button>HOME</button>
           </Link>
           <Link to="/faq">
-            <a>FAQ</a>
+            <button>FAQ</button>
           </Link>
           <Link to="/contato">
-            <a>CONTATO</a>
+            <button>CONTATO</button>
           </Link>
           <Link to="/missao">
-            <a>MISSÃO</a>
+            <button>MISSÃO</button>
           </Link>
           <Link to="/politica">
-            <a>POLÍTICA DE PRIVACIDADE</a>
+            <button>POLÍTICA DE PRIVACIDADE</button>
           </Link>
         </div>
         <div className="copy">

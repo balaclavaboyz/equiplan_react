@@ -2,7 +2,7 @@ import React from "react";
 import Img from "react-cool-img";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { Nav, Navbar, Container, Row, Col, Stack } from "react-bootstrap";
+import { Nav, Container, Row, Col, } from "react-bootstrap";
 
 const Menu = () => {
   return (

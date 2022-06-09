@@ -1,9 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Titulo from "../Titulo";
 import Galeria1 from "../Galeria1";
 import Galeria2 from "../Galeria2";
-import SubTitulo from "../SubTitulo";
 
 const Home = () => {
     return (
