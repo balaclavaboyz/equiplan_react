@@ -14,33 +14,33 @@ const Menu = () => {
               to="/"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
-              <Img src={logo} alt="logo_milvest" width="80px" />
+              <Img src={logo} alt="logo_milvest" width="100px" />
             </Link>
           </Col>
           <Col>
             <Nav className="nav">
               <Nav.Item>
-                <Nav.Link as={Link} to="/" style={{ fontSize: "1rem",color:"black" }}>
+                <Nav.Link as={Link} to="/" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
                   HOME
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/faq" style={{ fontSize: "1rem",color:"black" }}>
+                <Nav.Link as={Link} to="/faq" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
                   FAQ
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/contato" style={{ fontSize: "1rem",color:"black" }}>
+                <Nav.Link as={Link} to="/contato" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
                   CONTATO
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/missao" style={{ fontSize: "1rem",color:"black" }}>
+                <Nav.Link as={Link} to="/missao" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
                   MISSÃO
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/politica" style={{ fontSize: "1rem",color:"black" }}>
+                <Nav.Link as={Link} to="/politica" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
                   POLÍTICA DE PRIVACIDADE
                 </Nav.Link>
               </Nav.Item>
@@ -50,7 +50,7 @@ const Menu = () => {
         <Row>
           <div id="header">
             <div id="creci">
-              <p><b>CRECI-J </b>35272</p>
+              <p><b>CRECI-J35272</b></p>
             </div>
           </div>
         </Row>
