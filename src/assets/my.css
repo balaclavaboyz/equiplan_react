@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
   padding-bottom: calc(var(--footer) + 20px);
 }
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .main {
   display: flex;
   flex-direction: column;
