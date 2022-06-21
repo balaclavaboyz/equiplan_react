@@ -36,11 +36,12 @@ body {
   height: var(--footer);
 }
 .galeria_wrapper {
-  width: 90%;
+  width:50vw;
 }
 .content_wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .link_rapidos {
   display: flex;

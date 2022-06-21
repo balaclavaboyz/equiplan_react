@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <div className="galeria_wrapper">
-                <Galeria1></Galeria1>
+                {/* <Galeria1></Galeria1> */}
                 <Galeria2></Galeria2>
             </div>
         </>
