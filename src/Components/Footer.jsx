@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer_wrapper">
-        <div className="link_rapidos">
+        {/* <div className="link_rapidos">
           <Link to="/">
           HOME
           </Link>
@@ -22,9 +22,9 @@ const Footer = () => {
           <Link to="/politica">
           POLÍTICA
           </Link>
-        </div>
+        </div> */}
         <div className="copy">
-          <p>Peter Kim 2022</p>
+          <p>Powered By Peter Kim 2022</p>
         </div>
       </div>
     </>
