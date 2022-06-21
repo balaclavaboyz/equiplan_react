@@ -36,7 +36,7 @@ body {
   height: var(--footer);
 }
 .galeria_wrapper {
-  width:30vw;
+  width:25vw;
 }
 .content_wrapper {
   display: flex;
