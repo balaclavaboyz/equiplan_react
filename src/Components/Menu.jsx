@@ -20,27 +20,27 @@ const Menu = () => {
           <Col>
             <Nav className="nav">
               <Nav.Item>
-                <Nav.Link as={Link} to="/" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="/" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   HOME
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/faq" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="/faq" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   FAQ
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/contato" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="/contato" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   CONTATO
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/missao" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="/missao" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   MISSÃO
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/politica" style={{ fontSize: "1rem",color:"black",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="/politica" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   POLÍTICA DE PRIVACIDADE
                 </Nav.Link>
               </Nav.Item>
