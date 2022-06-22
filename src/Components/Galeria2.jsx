@@ -22,7 +22,7 @@ const Galeria2 = () => {
             Object.entries(t[1]).map((t, k) => (
               <Carousel.Item key={k}>
                 <Image
-                  className="d-block w-100"
+                  className="d-block"
                   src={t[1]}
                   alt="imagens_da_galeria_principal"
                 />

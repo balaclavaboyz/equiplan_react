@@ -12,7 +12,9 @@ const App = () => {
   return (
     <>
       <div className="main">
-        <Menu></Menu>
+        <div className="header">
+          <Menu></Menu>
+        </div>
         <div className="content_wrapper">
           <Switch>
             <Route exact path="/" component={Home} />
@@ -22,9 +24,11 @@ const App = () => {
             <Route path="/missao" component={missao} />
           </Switch>
         </div>
+        <div className="bot">
+          <Footer></Footer>
+        </div>
       </div>
-      <Footer></Footer>
-        <WhatsappIcon></WhatsappIcon>
+      <WhatsappIcon></WhatsappIcon>
     </>
   );
 };

@@ -7,7 +7,6 @@ import { Nav, Container, Row, Col, } from "react-bootstrap";
 const Menu = () => {
   return (
     <>
-      <Container className="mt-5">
         <Row id="menu">
           <Col md="auto">
             <Link
@@ -54,7 +53,6 @@ const Menu = () => {
             </div>
           </div>
         </Row>
-      </Container>
     </>
   );
 };
