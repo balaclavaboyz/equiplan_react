@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel,Image } from "react-bootstrap";
 import ButtonCatalogo from "./ButtonCatalogo";
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 function importAll(r) {
   let images = {};
@@ -15,9 +16,16 @@ const galeria2 = importAll(
 );
 
 const Galeria2 = () => {
+  const settings={
+          dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+  }
   return (
     <>
-        <Carousel id="carousel2">
+        {/* <Carousel id="carousel2">
           {Object.entries(galeria2).map((t, k) =>
             Object.entries(t[1]).map((t, k) => (
               <Carousel.Item key={k}>
@@ -32,7 +40,7 @@ const Galeria2 = () => {
               </Carousel.Item>
             ))
           )}
-        </Carousel>
+        </Carousel> */}
 
 
     </>

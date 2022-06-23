@@ -1,12 +1,20 @@
 import React from "react";
 import Img from "react-cool-img";
-import { Link } from "react-router-dom";
+import { Link ,NavLink} from "react-router-dom";
 import logo from "../assets/logo.png";
 import { Nav, Container, Row, Col, } from "react-bootstrap";
 
 const Menu = () => {
   return (
     <>
+    <nav>
+      <NavLink to="/">
+        Home
+      </NavLink>
+      <NavLink to="/faq">
+        Faq
+      </NavLink>
+    </nav>
       <Container className="mt-5">
         <Row id="menu">
           <Col md="auto">
@@ -42,6 +50,11 @@ const Menu = () => {
               <Nav.Item>
                 <Nav.Link as={Link} to="/politica" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   POLÍTICA DE PRIVACIDADE
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link as={Link} to="/imoveis" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                  IMÓVEIS
                 </Nav.Link>
               </Nav.Item>
             </Nav>

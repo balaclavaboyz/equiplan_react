@@ -1,12 +1,14 @@
 import Menu from "./Components/Menu";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Components/pages/Home";
 import Politica from "./Components/pages/Politica";
 import Faq from "./Components/pages/Faq";
-import contato from "./Components/pages/contato";
-import missao from "./Components/pages/missao";
+import Contato from "./Components/pages/contato";
+import Missao from "./Components/pages/missao";
 import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
+import Imoveis from "./Components/pages/Imoveis";
+import Im79703 from "./Components/pages/imoveis/Im79703";
 
 const App = () => {
   return (
@@ -14,17 +16,18 @@ const App = () => {
       <div className="main">
         <Menu></Menu>
         <div className="content_wrapper">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/faq" component={Faq} />
-            <Route path="/politica" component={Politica} />
-            <Route path="/contato" component={contato} />
-            <Route path="/missao" component={missao} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/politica" element={<Politica />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/missao" element={<Missao />} />
+            <Route path="/imoveis" element={<Imoveis />}/>
+          </Routes>
         </div>
       </div>
       <Footer></Footer>
-        <WhatsappIcon></WhatsappIcon>
+      <WhatsappIcon></WhatsappIcon>
     </>
   );
 };
