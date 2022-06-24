@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   padding-bottom: calc(var(--footer) + 20px);
 }
-.nav{
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -44,7 +44,7 @@ body {
   height: var(--footer);
 }
 .galeria_wrapper {
-  width:25vw;
+  width: 30vw;
 }
 .content_wrapper {
   display: flex;
@@ -117,7 +117,27 @@ body {
 #legenda {
   grid-area: legenda;
 }
-
+/* imoveis page */
+.imoveisGaleria {
+  height: 200px;
+}
+.container_imoveis_menu {
+  display: grid;
+  grid-template-areas:
+   "imoveis_menu imoveis_context imoveis_context imoveis_context"
+   "imoveis_menu imoveis_desp imoveis_desp imoveis_desp";
+  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+.imoveis_context {
+  grid-area: imoveis_context;
+}
+.imoveis_desp {
+  grid-area: imoveis_desp;
+}
+.imoveis_menu {
+  grid-area: imoveis_menu;
+}
 @media screen and (max-width: 1024px) {
   .raiz {
     /* header container-imgs footer */
@@ -173,11 +193,11 @@ body {
     flex-wrap: wrap;
     padding: 80px 0;
   }
-  #root{
-  padding-bottom: 0;
+  #root {
+    padding-bottom: 0;
   }
-  .content_wrapper{
-      min-height: 500px;
+  .content_wrapper {
+    min-height: 500px;
   }
 }
 

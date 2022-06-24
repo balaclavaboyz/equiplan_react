@@ -7,14 +7,6 @@ import { Nav, Container, Row, Col, } from "react-bootstrap";
 const Menu = () => {
   return (
     <>
-    <nav>
-      <NavLink to="/">
-        Home
-      </NavLink>
-      <NavLink to="/faq">
-        Faq
-      </NavLink>
-    </nav>
       <Container className="mt-5">
         <Row id="menu">
           <Col md="auto">
@@ -33,27 +25,27 @@ const Menu = () => {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/faq" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="faq" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   FAQ
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/contato" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="contato" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   CONTATO
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/missao" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="missao" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   MISSÃO
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/politica" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="politica" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   POLÍTICA DE PRIVACIDADE
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link as={Link} to="/imoveis" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                <Nav.Link as={Link} to="imoveis" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   IMÓVEIS
                 </Nav.Link>
               </Nav.Item>
