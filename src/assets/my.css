@@ -144,6 +144,18 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+.imoveis_imgs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  justify-content: center;
+}
+.imoveis_imgs > div >a> img{
+  height: 300px;
+  width: auto;
+}
 .imoveis_specs_pos{
   display: flex;
   flex-direction: column;
