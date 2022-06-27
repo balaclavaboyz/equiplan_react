@@ -8,7 +8,6 @@ import Missao from "./Components/pages/missao";
 import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
-import IM79703 from './Components/pages/imoveis/IM79703'
 
 const App = () => {
     return (
