@@ -1,5 +1,5 @@
 import Menu from "./Components/Menu";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,Link } from "react-router-dom";
 import Home from "./Components/pages/Home";
 import Politica from "./Components/pages/Politica";
 import Faq from "./Components/pages/Faq";
@@ -8,6 +8,7 @@ import Missao from "./Components/pages/missao";
 import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
+import IM79703 from "./Components/pages/imoveis/IM79703";
 
 const App = () => {
     return (
@@ -21,8 +22,8 @@ const App = () => {
                         <Route path="politica" element={<Politica />} />
                         <Route path="contato" element={<Contato />} />
                         <Route path="missao" element={<Missao />} />
-                        <Route path="imoveis/*" element={<Imoveis />}>
-                        </Route>
+                        <Route path="imoveis" element={<Imoveis />}></Route>
+                        <Route path="IM79703" element={<IM79703 />} />
                     </Routes>
                 </div>
             </div>
