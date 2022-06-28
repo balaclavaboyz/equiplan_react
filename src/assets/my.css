@@ -117,6 +117,11 @@ body {
 #legenda {
   grid-area: legenda;
 }
+/* indice page */
+.indice_imoveis_wrapper{
+  display: flex;
+  flex-direction: column;
+}
 /* imoveis page */
 .imoveisGaleria {
   height: 200px;
