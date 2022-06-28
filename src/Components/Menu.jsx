@@ -25,6 +25,11 @@ const Menu = () => {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
+                <Nav.Link as={Link} to="imoveis" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
+                  IMÓVEIS
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
                 <Nav.Link as={Link} to="faq" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   FAQ
                 </Nav.Link>
@@ -42,11 +47,6 @@ const Menu = () => {
               <Nav.Item>
                 <Nav.Link as={Link} to="politica" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
                   POLÍTICA DE PRIVACIDADE
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={Link} to="imoveis" style={{ fontSize: "1rem",color:"white",fontWeight:"bold" }}>
-                  IMÓVEIS
                 </Nav.Link>
               </Nav.Item>
             </Nav>
