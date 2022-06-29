@@ -6,26 +6,29 @@ def give_only_ref():
     import os
 
     if os.path.getsize('temp') == 0:
-        if len(sys.argv[1])>2:
-            doesFileExists=exists(sys.argv[1]+'.csv')
-            if doesFileExists:
-                print('existe')
-                nome_arquivo_csv=sys.argv[1]+'.csv'
-                with open('temp','w') as f:
-                    f.write(nome_arquivo_csv)
-            else:
-                print('n existe')
-                check=0
-                while check ==False:
-                    nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
-                    if exists(nome_arquivo_csv):
-                        check=True
-                        with open('temp','w') as f:
-                            f.write(nome_arquivo_csv)
-                    else:
-                        print('o arquivo nao existe\n')
-        else:
-            nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
+        # if len(sys.argv[1])>2:
+        #     doesFileExists=exists(sys.argv[1]+'.csv')
+        #     if doesFileExists:
+        #         print('existe')
+        #         nome_arquivo_csv=sys.argv[1]+'.csv'
+        #         with open('temp','w') as f:
+        #             f.write(nome_arquivo_csv)
+        #     else:
+        #         print('n existe')
+        #         check=0
+        #         while check ==False:
+        #             nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
+        #             if exists(nome_arquivo_csv):
+        #                 check=True
+        #                 with open('temp','w') as f:
+        #                     f.write(nome_arquivo_csv)
+        #             else:
+        #                 print('o arquivo nao existe\n')
+        # else:
+        #     nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
+        nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
+        with open('temp','w') as f:
+            f.write(nome_arquivo_csv)
     else:
         with open('temp','r') as f:
             nome_arquivo_csv = f.read()
@@ -94,6 +97,27 @@ def csv_to_page():
     # closing a file
     file1.close()
 
+    # adding link with ref in /src/components/pages/imoveis.jsx
+    # opening a text file
+    file1 = open('./src/Components/pages/Imoveis.jsx', "r",encoding='utf-8')
+
+    # read file content
+    readfile = file1.read()
+
+    # checking condition for string found or not
+    if ref in readfile:
+        print(ref, ' ja existe esse link no arquivo de indice\n')
+    else:
+        print(ref, ' nao existe, criando link no arquivo de indice\n')
+        inputfile = open('./src/Components/pages/Imoveis.jsx', 'r').readlines()
+        write_file = open('./src/Components/pages/Imoveis.jsx', 'w')
+        for line in inputfile:
+            write_file.write(line)
+            if "                <h1>Índice de Imóveis</h1>" in line:
+                new_line = "                <Link to=\"/"+ref+"\">"+ref+"</Link>"
+                write_file.write(new_line + "\n")
+                print('Criado link no indice' + ref)
+        write_file.close()
 
 def make_qrcode():
     import qrcode
@@ -145,9 +169,8 @@ menu_options = {
 
 if __name__ == '__main__':
     import os
-    if not os.path.exists('temp'):
-        with open('temp','w') as f:
-            f.write('')
+    with open('temp','w') as f:
+        f.write('')
 
     while(True):
         for key in menu_options.keys():
