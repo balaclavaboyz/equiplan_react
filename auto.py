@@ -1,3 +1,6 @@
+from inspect import EndOfBlock
+
+
 def give_only_ref():
     import pandas
     import sys
@@ -109,8 +112,8 @@ def csv_to_page():
         print(ref, ' ja existe esse link no arquivo de indice\n')
     else:
         print(ref, ' nao existe, criando link no arquivo de indice\n')
-        inputfile = open('./src/Components/pages/Imoveis.jsx', 'r').readlines()
-        write_file = open('./src/Components/pages/Imoveis.jsx', 'w')
+        inputfile = open('./src/Components/pages/Imoveis.jsx', 'r',encoding='utf-8').readlines()
+        write_file = open('./src/Components/pages/Imoveis.jsx', 'w',encoding='utf-8')
         for line in inputfile:
             write_file.write(line)
             if "                <h1>Índice de Imóveis</h1>" in line:
