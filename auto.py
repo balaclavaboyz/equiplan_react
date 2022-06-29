@@ -174,22 +174,7 @@ if __name__ == '__main__':
     import os
     with open('temp','w') as f:
         f.write('')
-
-    while(True):
-        for key in menu_options.keys():
-            print(key, '--', menu_options[key])
-        option = ''
-        try:
-            option = int(input('Escolha o numero: '))
-        except:
-            print('deu erro que nao colocou numero')
-        if option == 1:
-            csv_to_page()
-        elif option == 2:
-            make_qrcode()
-        elif option == 3:
-            move_imgs()
-        elif option == 4:
-            exit()
-        else:
-            print('Escolha invalido. Escolha um numero')
+        csv_to_page()
+	make_qrcode()
+	move_imgs()
+	exit()
