@@ -174,7 +174,7 @@ if __name__ == '__main__':
     import os
     with open('temp','w') as f:
         f.write('')
-        csv_to_page()
-	make_qrcode()
-	move_imgs()
-	exit()
+    csv_to_page()
+    make_qrcode()
+    move_imgs()
+    exit()
