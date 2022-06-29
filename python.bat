@@ -1,1 +1,0 @@
-python.exe auto.py
