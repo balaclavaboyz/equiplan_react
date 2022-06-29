@@ -1,7 +1,4 @@
 import React from "react";
-import StraightenIcon from "@mui/icons-material/Straighten";
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
-import SensorDoorOutlinedIcon from "@mui/icons-material/SensorDoorOutlined";
 import InnerHTML from "dangerously-set-html-content";
 
 export default function IM79703() {
@@ -42,28 +39,11 @@ export default function IM79703() {
 
                     <div className="imoveis_desp">
                         <hr />
-                        {/*titulo  */}
                         <h1>Casa em Lapa com 200m²</h1>
-                        {/* endereco */}
                         <p>
                             Rua Guararapes, 669, Lapa, São Paulo / SP - 5077051
                         </p>
-                        {/* preco */}
                         <p>Aluguel R$ 4.000,00</p>
-                        {/* icons emoji com info */}
-                        {/* <div className="imoveis_specs">
-          <div className="imoveis_specs_pos">
-            <StraightenIcon></StraightenIcon>
-            200m²
-          </div>
-          <div className="imoveis_specs_pos">
-            <SensorDoorOutlinedIcon></SensorDoorOutlinedIcon>1 suite 5 quartos
-          </div>
-          <div className="imoveis_specs_pos">
-            <DirectionsCarIcon></DirectionsCarIcon>1 vaga
-          </div>
-        </div> */}
-                        {/* descripcao do imovel */}
                         <hr />
                         <h2>Descrição</h2>
                         <p>
