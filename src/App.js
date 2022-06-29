@@ -1,5 +1,5 @@
 import Menu from "./Components/Menu";
-import { Routes, Route,Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Components/pages/Home";
 import Politica from "./Components/pages/Politica";
 import Faq from "./Components/pages/Faq";

@@ -1,6 +1,4 @@
 import React from "react";
-import { Carousel, Image } from "react-bootstrap";
-import ButtonCatalogo from "./ButtonCatalogo";
 import {
     CarouselProvider,
     Slider,

@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "react-cool-img";
-import { Link ,NavLink} from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { Nav, Container, Row, Col, } from "react-bootstrap";
 
