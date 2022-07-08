@@ -8,7 +8,6 @@ import Missao from "./Components/pages/missao";
 import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
-import IM79981 from "./Components/pages/imoveis/IM79981";
 import IM79941 from "./Components/pages/imoveis/IM79941";
 import IM79945 from "./Components/pages/imoveis/IM79945";
 import IM79903 from "./Components/pages/imoveis/IM79903";
@@ -37,7 +36,6 @@ const App = () => {
                         <Route path="contato" element={<Contato />} />
                         <Route path="missao" element={<Missao />} />
                         <Route path="imoveis" element={<Imoveis />}></Route>
-                        <Route path="IM79981" element={<IM79981 />} />
                         <Route path="IM79941" element={<IM79941 />} />
                         <Route path="IM79945" element={<IM79945 />} />
                         <Route path="IM79903" element={<IM79903 />} />
