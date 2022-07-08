@@ -2,9 +2,29 @@ def give_only_ref():
     import pandas
     import codecs
     import os
+    import re
 
     if os.path.getsize('temp') == 0:
-        nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
+        list_local_files=[]
+        list_imoveis_only_file=[]
+        for path in os.listdir('./'):
+            if os.path.isfile(os.path.join('./',path)):
+                list_local_files.append(path)
+        for i in list_local_files:
+            if re.search(r'^imovel',i):
+                list_imoveis_only_file.append(i)
+        j=0
+        while(True):
+            for i in list_imoveis_only_file:
+                print(j,i)
+                j=j+1
+            escolha=int(input('Escolha o arquivo csv: '))
+            if escolha >=0 and escolha <=j-1:
+                nome_arquivo_csv=list_imoveis_only_file[escolha]
+                break
+            else:
+                escolha=input('Escolha o arquivo csv: ')
+
         with open('temp','w') as f:
             f.write(nome_arquivo_csv)
     else:
@@ -26,7 +46,6 @@ def give_only_ref():
 
 def csv_to_page():
     import codecs
-    import pandas
 
     csv = give_only_ref()
 
