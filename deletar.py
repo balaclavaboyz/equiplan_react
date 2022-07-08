@@ -51,6 +51,14 @@ while(True):
         # replace file with original name
         os.replace('temp.txt', './src/App.js')
         print('deletado imovel do app.js')
+
+        with open('./src/Components/pages/Imoveis.jsx','r') as input:
+            with open('temp.txt','w') as output:
+                for line in input:
+                    if list_to_delete_in_indexjs[0] not in line.strip('\n'):
+                        output.write(line)
+        os.replace('temp.txt','./src/Components/pages/Imoveis.jsx')
+        print('deletado o link do index')
         exit()
     else:
         escolha=int(input('Escolha o numero do imovel, denovo: '))
