@@ -50,6 +50,7 @@ while(True):
 
         # replace file with original name
         os.replace('temp.txt', './src/App.js')
+        print('deletado imovel do app.js')
         exit()
     else:
         escolha=int(input('Escolha o numero do imovel, denovo: '))
