@@ -18,7 +18,7 @@ def give_only_ref():
             for i in list_imoveis_only_file:
                 print(j,i)
                 j=j+1
-            escolha=int(input('Escolha o arquivo csv: '))
+            escolha=int(input('Escolha o numbero do arquivo: '))
             if escolha >=0 and escolha <=j-1:
                 nome_arquivo_csv=list_imoveis_only_file[escolha]
                 break
