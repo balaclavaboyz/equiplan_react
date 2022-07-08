@@ -1,5 +1,6 @@
 import os
 from posixpath import splitext
+import shutil
 path=r'./src/Components/pages/imoveis/'
 list_path=[]
 
@@ -34,7 +35,7 @@ while(True):
         print('deletando fotos')
 
         if os.path.isdir('./src/assets/imoveis'+  splitext(list_available[escolha])[0]):
-            os.remove('./src/assets/imoveis'+  splitext(list_available[escolha])[0])
+            shutil.rmtree('./src/assets/imoveis'+  splitext(list_available[escolha])[0])
         else:
             print('arquivos de fotos nao existem')
         
