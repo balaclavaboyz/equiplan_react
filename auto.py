@@ -104,7 +104,7 @@ def make_qrcode():
     ref = csv['Referência'].loc[csv.index[0]]
 
     img = qrcode.make('https://equiplan.com.br/'+ref)
-    img.save(ref+'.png')
+    img.save('./QR CODE DOS IMOVEIS/'+ref+'.png')
     print('criado e salvo como '+ref+'.png\n')
 
 
