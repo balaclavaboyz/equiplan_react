@@ -1,34 +1,9 @@
-from inspect import EndOfBlock
-
-
 def give_only_ref():
     import pandas
-    import sys
     import codecs
-    from os.path import exists
     import os
 
     if os.path.getsize('temp') == 0:
-        # if len(sys.argv[1])>2:
-        #     doesFileExists=exists(sys.argv[1]+'.csv')
-        #     if doesFileExists:
-        #         print('existe')
-        #         nome_arquivo_csv=sys.argv[1]+'.csv'
-        #         with open('temp','w') as f:
-        #             f.write(nome_arquivo_csv)
-        #     else:
-        #         print('n existe')
-        #         check=0
-        #         while check ==False:
-        #             nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
-        #             if exists(nome_arquivo_csv):
-        #                 check=True
-        #                 with open('temp','w') as f:
-        #                     f.write(nome_arquivo_csv)
-        #             else:
-        #                 print('o arquivo nao existe\n')
-        # else:
-        #     nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
         nome_arquivo_csv= input("Escreva apenas o nome do arquivo csv sem a extensao: ")+'.csv'
         with open('temp','w') as f:
             f.write(nome_arquivo_csv)
@@ -51,6 +26,7 @@ def give_only_ref():
 
 def csv_to_page():
     import codecs
+    import pandas
 
     csv = give_only_ref()
 
@@ -171,7 +147,6 @@ menu_options = {
 }
 
 if __name__ == '__main__':
-    import os
     with open('temp','w') as f:
         f.write('')
     csv_to_page()
