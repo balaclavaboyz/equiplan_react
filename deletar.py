@@ -24,7 +24,6 @@ for i in list_available:
 escolha=int(input('Escolha o numero do imovel: '))
 while(True):
     if escolha>=0 and escolha<=j-1:
-        # ok
         file_to_delete_path=list_path[escolha]
         if os.path.isfile(file_to_delete_path):
             os.remove(file_to_delete_path)
@@ -34,20 +33,23 @@ while(True):
 
         print('deletando fotos')
 
-        if os.path.isdir('./src/assets/imoveis'+  splitext(list_available[escolha])[0]):
-            shutil.rmtree('./src/assets/imoveis'+  splitext(list_available[escolha])[0])
+        if os.path.isdir('./src/assets/imoveis/'+  splitext(list_available[escolha])[0]):
+            shutil.rmtree('./src/assets/imoveis/'+  splitext(list_available[escolha])[0])
         else:
             print('arquivos de fotos nao existem')
         
         list_to_delete_in_indexjs=[]
-        list_to_delete_in_indexjs.append(list_available[escolha])
-        infile='./src/App.js'
-        outfile='./src/App.js'
-        with open(infile) as fin, open(outfile, "w+") as fout:
-            for line in fin:
-                for word in list_to_delete_in_indexjs:
-                    line = line.replace(word, "")
-                fout.write(line)
+        list_to_delete_in_indexjs.append(splitext(list_available[escolha])[0])
+        with open("./src/App.js", "r") as input:
+            with open("temp.txt", "w") as output:
+                # iterate all lines from file
+                for line in input:
+                    # if substring contain in a line then don't write it
+                    if list_to_delete_in_indexjs[0] not in line.strip("\n"):
+                        output.write(line)
+
+        # replace file with original name
+        os.replace('temp.txt', './src/App.js')
         exit()
     else:
         escolha=int(input('Escolha o numero do imovel, denovo: '))
