@@ -18,7 +18,6 @@ import IM79918 from "./Components/pages/imoveis/IM79918";
 import IM79912 from "./Components/pages/imoveis/IM79912";
 import IM79922 from "./Components/pages/imoveis/IM79922";
 import IM79939 from "./Components/pages/imoveis/IM79939";
-import IM79881 from "./Components/pages/imoveis/IM79881";
 import IM79886 from "./Components/pages/imoveis/IM79886";
 import IM79836 from "./Components/pages/imoveis/IM79836";
 import IM79866 from "./Components/pages/imoveis/IM79866";
@@ -48,7 +47,6 @@ const App = () => {
                         <Route path="IM79912" element={<IM79912 />} />
                         <Route path="IM79922" element={<IM79922 />} />
                         <Route path="IM79939" element={<IM79939 />} />
-                        <Route path="IM79881" element={<IM79881 />} />
                         <Route path="IM79886" element={<IM79886 />} />
                         <Route path="IM79836" element={<IM79836 />} />
                         <Route path="IM79866" element={<IM79866 />} />
