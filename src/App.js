@@ -9,15 +9,11 @@ import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
 import IM79941 from "./Components/pages/imoveis/IM79941";
-import IM79903 from "./Components/pages/imoveis/IM79903";
-import IM79905 from "./Components/pages/imoveis/IM79905";
 import IM79910 from "./Components/pages/imoveis/IM79910";
 import IM79922 from "./Components/pages/imoveis/IM79922";
-import IM79939 from "./Components/pages/imoveis/IM79939";
 import IM79886 from "./Components/pages/imoveis/IM79886";
 import IM79836 from "./Components/pages/imoveis/IM79836";
 import IM79866 from "./Components/pages/imoveis/IM79866";
-import IM79868 from "./Components/pages/imoveis/IM79868";
 import IM79703 from "./Components/pages/imoveis/IM79703";
 
 const App = () => {
@@ -34,15 +30,11 @@ const App = () => {
                         <Route path="missao" element={<Missao />} />
                         <Route path="imoveis" element={<Imoveis />}></Route>
                         <Route path="IM79941" element={<IM79941 />} />
-                        <Route path="IM79903" element={<IM79903 />} />
-                        <Route path="IM79905" element={<IM79905 />} />
                         <Route path="IM79910" element={<IM79910 />} />
                         <Route path="IM79922" element={<IM79922 />} />
-                        <Route path="IM79939" element={<IM79939 />} />
                         <Route path="IM79886" element={<IM79886 />} />
                         <Route path="IM79836" element={<IM79836 />} />
                         <Route path="IM79866" element={<IM79866 />} />
-                        <Route path="IM79868" element={<IM79868 />} />
                         <Route path="IM79703" element={<IM79703 />} />
                     </Routes>
                 </div>
