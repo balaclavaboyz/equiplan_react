@@ -11,7 +11,6 @@ export default function Imoveis() {
                 <Link to="/IM79886">IM79886</Link>
                 <Link to="/IM79836">IM79836</Link>
                 <Link to="/IM79866">IM79866</Link>
-                <Link to="/IM79703">IM79703</Link>
             </div>
         </>
     );
