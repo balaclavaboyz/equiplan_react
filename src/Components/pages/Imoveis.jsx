@@ -5,7 +5,7 @@ export default function Imoveis() {
     return (
         <>
             <div className="indice_imoveis_wrapper">
-                <h1>Índice de Imóveis</h1>
+                <h1>Casas / Lojas Comerciais</h1>
                 <Link to="/IM79973">IM79973</Link>
                 <Link to="/IM79981">IM79981</Link>
                 <Link to="/IM79941">IM79941</Link>
