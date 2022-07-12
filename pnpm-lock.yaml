@@ -27,7 +27,7 @@ specifiers:
   react-optimized-image: ^0.4.1
   react-router: ^6.3.0
   react-router-dom: 6.3.0
-  react-scripts: 5.0.1
+  react-scripts: ^5.0.1
   styled-components: ^5.3.5
   web-vitals: ^2.1.4
 
@@ -2777,7 +2777,7 @@ packages:
     resolution: {integrity: sha512-PB3ldyrcnAicT35TWPs5IcwKD8S333HMaa2VVv4+wdvebJkjWuW/xESoB8IwRcog8HYVYamb1g/R31Qv5Bx03g==}
     dependencies:
       '@types/eslint': 8.4.3
-      '@types/estree': 0.0.51
+      '@types/estree': 0.0.52
     dev: false
 
   /@types/eslint/8.4.3:
