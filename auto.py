@@ -112,7 +112,7 @@ def csv_to_page():
         for line in inputfile:
             write_file.write(line)
             if "                <h1>Índice de Imóveis</h1>" in line:
-                new_line = "                <Link to=\"/"+ref+"\">"+ref+"</Link>"
+                new_line = "                <div style={{display:'flex',gap:'1rem'}}><Link to=\"/"+ref+"\">"+ref+"</Link><p>"+titulo+"</p><p>Tipo: "+finalidade+"</p><p>Valor Locação: "+valor_locacao+"</p><p>Valor Venda: "+valor_venda+"</p></div>"
                 write_file.write(new_line + "\n")
                 print('Criado link no indice' + ref)
         write_file.close()
