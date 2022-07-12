@@ -111,7 +111,7 @@ def csv_to_page():
         write_file = open('./src/Components/pages/Imoveis.jsx', 'w',encoding='utf-8')
         for line in inputfile:
             write_file.write(line)
-            if "                <h1>Índice de Imóveis</h1>" in line:
+            if "                <h1>Casas / Lojas Comerciais</h1>" in line:
                 new_line = "                <div style={{display:'flex',gap:'1rem'}}><Link to=\"/"+ref+"\">"+ref+"</Link><p>"+titulo+"</p><p>Tipo: "+finalidade+"</p><p>Valor Locação: "+valor_locacao+"</p><p>Valor Venda: "+valor_venda+"</p></div>"
                 write_file.write(new_line + "\n")
                 print('Criado link no indice' + ref)
