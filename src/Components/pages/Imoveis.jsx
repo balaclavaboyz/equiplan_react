@@ -8,6 +8,7 @@ export default function Imoveis() {
 
             <div className="indice_imoveis_wrapper">
                 <h1>Casas / Lojas Comerciais</h1>
+                <div style={{display:'flex',gap:'1rem'}}><Link to="/IM80009">IM80009</Link><p>Casa em Brooklin Paulista com 92m²</p><p>Tipo: Venda</p><p>Valor Locação: R$ 0,00</p><p>Valor Venda: R$ 700.000,00</p></div>
                 <div style={{display:'flex',gap:'1rem'}}><Link to="/IM80036">IM80036</Link><p>Casa em Jardim Ipanema (Zona Sul) com 315m²</p><p>Tipo: Venda e Aluguel</p><p>Valor Locação: R$ 3.500,00</p><p>Valor Venda: R$ 1.100.000,00</p></div>
                 <div style={{display:'flex',gap:'1rem'}}><Link to="/IM80017">IM80017</Link><p>Casa em Cambuci com 180m²</p><p>Tipo: Aluguel</p><p>Valor Locação: R$ 6.300,00</p><p>Valor Venda: R$ 0,00</p></div>
                 <div style={{display:'flex',gap:'1rem'}}><Link to="/IM79981">IM79981</Link><p>Casa em Vila da Saúde com 80m²</p><p>Tipo: Aluguel</p><p>Valor Locação: R$ 2.500,00</p><p>Valor Venda: R$ 0,00</p></div>
