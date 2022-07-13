@@ -28,6 +28,10 @@ const Sidebar = () => {
         <Link to='/imoveis'>Imóveis</Link>
         <Link to='/faq'>Faq</Link>
       </Burger>
+      <div className="center">
+
+      <img src={logo} alt="link para homepage" style={{width:100}} />
+      </div>
       </div>
       <Container className="mt-5" id="menu_principal">
         <Row id="menu">
