@@ -46,14 +46,17 @@ body {
 .content_wrapper {
   width: 100%;
 }
-.swiper_container{
-  height: 100%;
+.swiper_container_homepage{
+  height: 600px;
 }
-.swiper_slide{
+.swiper_container{
+  height: 700px;
+}
+.swiper_slide_homepage{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 600px;
 }
 .link_rapidos {
   display: flex;
