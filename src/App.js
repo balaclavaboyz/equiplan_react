@@ -9,7 +9,6 @@ import Missao from "./Components/pages/missao";
 import WhatsappIcon from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
-import IM80036 from "./Components/pages/imoveis/IM80036";
 
 const App = () => {
     return (
@@ -24,7 +23,6 @@ const App = () => {
                         <Route path="contato" element={<Contato />} />
                         <Route path="missao" element={<Missao />} />
                         <Route path="imoveis" element={<Imoveis />}></Route>
-                        <Route path="IM80036" element={<IM80036 />} />
                     </Routes>
                 </div>
             </div>
