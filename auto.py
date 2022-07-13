@@ -144,7 +144,7 @@ def move_imgs():
         print('criado nova pasta: '+dst_folder)
 
     # Search files with .txt extension in source directory
-    pattern = "\*.jpg"
+    pattern = "/\.(png|jpe?g|svg|webp)$/"
     files = glob.glob(src_folder + pattern)
 
     # move the files with txt extension
