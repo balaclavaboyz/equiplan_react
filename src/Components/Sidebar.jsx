@@ -27,7 +27,7 @@ const Sidebar = () => {
     return (
         <>
             <div id="burger">
-                <Burger>
+                <Burger width={'150px'}>
                     <Link to="/">Home</Link>
                     <Link to="/imoveis">Imóveis</Link>
                     <Link to="/faq">Faq</Link>
