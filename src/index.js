@@ -2,13 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './assets/css.css'
+import "./assets/css.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <Router basename={process.env.PUBLIC_URL}>
-    <App />
-  </Router>,
-
-  document.getElementById("root")
+        <Router basename={process.env.PUBLIC_URL}>
+            <App />
+        </Router>
+        , document.getElementById("root")
 );
