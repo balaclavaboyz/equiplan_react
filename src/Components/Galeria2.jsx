@@ -29,7 +29,7 @@ const galeria2 = importAll(
 const Galeria2 = () => {
     return (
         <>
-            <div className="swiper_container">
+            <div className="swiper_container_homepage">
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar]}
                     spaceBetween={50}
@@ -40,7 +40,7 @@ const Galeria2 = () => {
                 >
                     {Object.entries(galeria2).map((t, k) => (
                         <SwiperSlide>
-                            <div key={k[0]} className="swiper_slide">
+                            <div key={k[0]} className="swiper_slide_homepage">
                                 <img src={t[1]} alt="" />
                             </div>
                         </SwiperSlide>
