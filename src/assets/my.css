@@ -155,7 +155,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+#burger{
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
+  #burger{
+    display: block;
+  }
+  #menu_principal{
+    display: none;
+  }
   .raiz {
     /* header container-imgs footer */
     display: grid;
