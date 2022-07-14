@@ -126,7 +126,7 @@ def csv_to_page():
                 new_line = "import "+ref+" from \"./Components/pages/imoveis/"+ref+"\";"
                 write_file.write(new_line + "\n")
                 print('criado import para ' + ref)
-            if "                        <Route path=\"imoveis\" element={<Imoveis />}></Route>" in line:
+            if "                        <Route path=\"imoveis\" element={<Imoveis />} />" in line:
                 new_line = "                        <Route path=\"" + \
                     ref+"\" element={<"+ref+" />} />"
                 write_file.write(new_line + "\n")
@@ -153,7 +153,7 @@ def csv_to_page():
         for line in inputfile:
             write_file.write(line)
             if "                        <span id=\"insertion_table\"></span>" in line:
-                new_line = "<tr id=\""+ref+"\"><th>"+ref+"</th><th>"+titulo+"</th><th>"+finalidade+"</th><th>"+valor_locacao+"</th><th>"+valor_venda+"</th></tr>"
+                new_line = "<tr id=\""+ref+"\"><th><Link to=\"/"+ref+"\">"+ref+"</Link></th><th>"+titulo+"</th><th>"+finalidade+"</th><th>"+valor_locacao+"</th><th>"+valor_venda+"</th></tr>"
                 write_file.write(new_line + "\n")
                 print('Criado link no indice' + ref)
             # if "                <h1>Casas / Lojas Comerciais</h1>" in line:
@@ -181,7 +181,7 @@ def move_imgs():
     import os
     import re
 
-    src_folder = r"."
+    src_folder = r"./zip_entrada/temp/"
     dst_folder = r"./src/assets/imoveis/"+ref+"/"
 
     # check if folder exists dest
@@ -192,7 +192,7 @@ def move_imgs():
     # Search files with .txt extension in source directory
     pattern = r"\.(png|jpe?g|svg|webp)$"
     # files = glob.glob(src_folder + pattern)
-    local_files=os.scandir('./')
+    local_files=os.scandir(src_folder)
     for i in local_files:
         match=re.search(pattern,i.name,re.IGNORECASE)
         if match:
@@ -202,7 +202,7 @@ def move_imgs():
     for file in files:
         # extract file name form file path
         file_name = os.path.basename(file)
-        shutil.move(file, dst_folder + file_name)
+        shutil.move(src_folder+file, dst_folder + file_name)
         print('Moved:', file)
     
     if not files:
