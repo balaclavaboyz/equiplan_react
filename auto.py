@@ -212,7 +212,7 @@ def move_imgs():
     j=0
     ext=images_to_resize[0][-4:]
     for i in images_to_resize:
-        list_command_to_resize.append(f"magick convert {src_folder}{i} -resize x500 ./src/assets/imoveis/{ref}/{j}{ext}")
+        list_command_to_resize.append(f"magick convert {src_folder}{i} -resize 400x500 ./src/assets/imoveis/{ref}/{j}{ext}")
         j=j+1
 
     # spawn parallel process
