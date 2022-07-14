@@ -134,6 +134,7 @@ def move_imgs():
     import glob
     import shutil
     import os
+    import re
 
     src_folder = r"."
     dst_folder = r"./src/assets/imoveis/"+ref+"/"
@@ -142,10 +143,15 @@ def move_imgs():
     if not os.path.exists(dst_folder):
         os.makedirs(dst_folder)
         print('criado nova pasta: '+dst_folder)
-
+    files=[]
     # Search files with .txt extension in source directory
-    pattern = "/\.(png|jpe?g|svg|webp)$/"
-    files = glob.glob(src_folder + pattern)
+    pattern = r"\.(png|jpe?g|svg|webp)$"
+    # files = glob.glob(src_folder + pattern)
+    local_files=os.scandir('./')
+    for i in local_files:
+        match=re.search(pattern,i.name,re.IGNORECASE)
+        if match:
+            files.append(i.name)
 
     # move the files with txt extension
     for file in files:
