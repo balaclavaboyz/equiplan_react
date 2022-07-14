@@ -30,13 +30,6 @@ export default function Imoveis() {
                                 <th>R$ 2.500,00</th>
                                 <th>R$ 0,00</th>
                             </tr>
-                                <th>
-                                </th>
-                                <th>Loja em Santo Amaro com 440m²</th>
-                                <th>Aluguel</th>
-                                <th>R$ 35.000,00</th>
-                                <th>R$ 0,00</th>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
