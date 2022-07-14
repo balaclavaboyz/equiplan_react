@@ -50,10 +50,13 @@ while(True):
         os.replace('temp.txt', './src/App.js')
         print('deletado imovel do app.js')
 
+
+        entry_imoveis_table=list_available[escolha][:-4]
+
         with open('./src/Components/pages/Imoveis.jsx','r',encoding='utf-8') as input:
             with open('temp.txt','w',encoding='utf-8') as output:
                 for line in input:
-                    if list_to_delete_in_indexjs[0] not in line.strip('\n'):
+                    if entry_imoveis_table not in line.strip('\n'):
                         output.write(line)
         os.replace('temp.txt','./src/Components/pages/Imoveis.jsx')
         print('deletado o link do index')

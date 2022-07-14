@@ -7,26 +7,28 @@ import { Nav, Container, Row, Col } from "react-bootstrap";
 import { slide as Burger } from "react-burger-menu";
 
 const Sidebar = () => {
-    const sidebarStatus=()=>{
-      const [open,setOpen]=UseState(false)
-    }
+    const sidebarStatus = () => {
+        const [open, setOpen] = UseState(false);
+    };
     return (
         <>
             <div id="burger">
-                <Burger width={'150px'} > 
-                    <Link to="/" >Home</Link>
+                <Burger width={"150px"}>
+                    <Link to="/">Home</Link>
                     <Link to="/imoveis">Imóveis</Link>
                     <Link to="/faq">Faq</Link>
                     <Link to="/contato">Contato</Link>
                     <Link to="/missao">Missão</Link>
                     <Link to="/politica">Política de Privacidade</Link>
                 </Burger>
-                <div className="center">
-                    <img
-                        src={logo}
-                        alt="link para homepage"
-                        style={{ width: 100 }}
-                    />
+                <div className="center mt-2 mb-2">
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt="link para homepage"
+                            style={{ width: 100 }}
+                        />
+                    </Link>
                 </div>
             </div>
             <Container className="mt-5" id="menu_principal">

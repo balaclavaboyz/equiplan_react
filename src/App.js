@@ -1,5 +1,5 @@
 import Sidebar from "./Components/Sidebar";
-import '../src/assets/sidebar.css'
+import "../src/assets/sidebar.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Components/pages/Home";
 import Politica from "./Components/pages/Politica";
@@ -14,7 +14,7 @@ const App = () => {
     return (
         <>
             <div className="main">
-                <Sidebar></Sidebar>
+                <Sidebar />
                 <div className="content_wrapper">
                     <Routes>
                         <Route path="/" element={<Home />} />
@@ -22,12 +22,12 @@ const App = () => {
                         <Route path="politica" element={<Politica />} />
                         <Route path="contato" element={<Contato />} />
                         <Route path="missao" element={<Missao />} />
-                        <Route path="imoveis" element={<Imoveis />}></Route>
+                        <Route path="imoveis" element={<Imoveis />} />
                     </Routes>
                 </div>
             </div>
-            <Footer></Footer>
-            <WhatsappIcon></WhatsappIcon>
+            <Footer />
+            <WhatsappIcon />
         </>
     );
 };

@@ -111,10 +111,14 @@ def csv_to_page():
         write_file = open('./src/Components/pages/Imoveis.jsx', 'w',encoding='utf-8')
         for line in inputfile:
             write_file.write(line)
-            if "                <h1>Casas / Lojas Comerciais</h1>" in line:
-                new_line = "                <div style={{display:'flex',gap:'1rem'}}><Link to=\"/"+ref+"\">"+ref+"</Link><p>"+titulo+"</p><p>Tipo: "+finalidade+"</p><p>Valor Locação: "+valor_locacao+"</p><p>Valor Venda: "+valor_venda+"</p></div>"
+            if "                        <span id=\"insertion_table\"></span>" in line:
+                new_line = "<tr id=\""+ref+"\"><th>"+ref+"</th><th>"+titulo+"</th><th>"+finalidade+"</th><th>"+valor_locacao+"</th><th>"+valor_venda+"</th></tr>"
                 write_file.write(new_line + "\n")
                 print('Criado link no indice' + ref)
+            # if "                <h1>Casas / Lojas Comerciais</h1>" in line:
+            #     new_line = "                <div style={{display:'flex',gap:'1rem'}}><Link to=\"/"+ref+"\">"+ref+"</Link><p>"+titulo+"</p><p>Tipo: "+finalidade+"</p><p>Valor Locação: "+valor_locacao+"</p><p>Valor Venda: "+valor_venda+"</p></div>"
+            #     write_file.write(new_line + "\n")
+            #     print('Criado link no indice' + ref)
         write_file.close()
 
 def make_qrcode():
