@@ -1,4 +1,5 @@
 import shutil
+import subprocess
 
 
 def give_only_ref():
@@ -198,12 +199,34 @@ def move_imgs():
         if match:
             files.append(i.name)
 
-    # move the files with txt extension
-    for file in files:
-        # extract file name form file path
-        file_name = os.path.basename(file)
-        shutil.move(src_folder+file, dst_folder + file_name)
-        print('Moved:', file)
+
+    # resize imsg to 400x500 aspect-ratio
+    images_to_resize=[]
+    for path in os.listdir(src_folder):
+        match=re.search(pattern,path)
+        if match:
+            images_to_resize.append(path)
+
+    list_command_to_resize=[]
+    # resizing and saving in the correct folder
+    j=0
+    ext=images_to_resize[0][-4:]
+    for i in images_to_resize:
+        list_command_to_resize.append(f"magick convert {src_folder}{i} -resize x500 ./src/assets/imoveis/{ref}/{j}{ext}")
+        j=j+1
+
+    # spawn parallel process
+    procs=[subprocess.Popen(i) for i in list_command_to_resize]
+    for p in procs:
+        p.wait()
+        print('processando imagem')
+
+    # # moving resized files
+    # for file in files:
+    #     # extract file name form file path
+    #     file_name = os.path.basename(file)
+    #     shutil.move(src_folder+file, dst_folder + file_name)
+    #     print('Moved: ', file)
     
     if not files:
         print('Nao existe nenhuma foto no diretorio e nada foi feito\n')
