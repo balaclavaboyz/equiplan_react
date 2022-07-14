@@ -18,6 +18,7 @@ export default function Imoveis() {
                             <th>Venda</th>
                         </tr>
                         <span id="insertion_table"></span>
+<tr id="IM80018"><th>IM80018</th><th>Loja em Santo Amaro com 440m²</th><th>Aluguel</th><th>R$ 35.000,00</th><th>R$ 0,00</th></tr>
                     </thead>
                 </table>
             </div>
