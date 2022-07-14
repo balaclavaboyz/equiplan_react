@@ -22,7 +22,6 @@ export default function Imoveis() {
                         <tbody>
                             <span id="insertion_table"></span>
 <tr id="IM80045"><th><Link to="/IM80045">IM80045</Link></th><th>Casa em Brooklin Paulista com 174m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.450.000,00</th></tr>
-<tr id="IM80042"><th><Link to="/IM80042">IM80042</Link></th><th>Casa Comercial em Pacaembu com 420m²</th><th>Venda e Aluguel</th><th>R$ 15.000,00</th><th>R$ 2.950.000,00</th></tr>
                             <tr id="IM79981">
                                 <th>
                                     <Link to="/IM79981">IM79981</Link>
