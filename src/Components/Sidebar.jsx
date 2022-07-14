@@ -1,4 +1,4 @@
-import React, { UseState } from "react";
+import React from "react";
 import "react-pro-sidebar/dist/css/styles.css";
 import Img from "react-cool-img";
 import { Link } from "react-router-dom";
@@ -7,9 +7,6 @@ import { Nav, Container, Row, Col } from "react-bootstrap";
 import { slide as Burger } from "react-burger-menu";
 
 const Sidebar = () => {
-    const sidebarStatus = () => {
-        const [open, setOpen] = UseState(false);
-    };
     return (
         <>
             <div id="burger">
