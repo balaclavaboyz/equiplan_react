@@ -1,12 +1,4 @@
 import React, { useState } from "react";
-// import {
-//     CarouselProvider,
-//     Slider,
-//     Slide,
-//     ButtonBack,
-//     ButtonNext,
-// } from "pure-react-carousel";
-// import "pure-react-carousel/dist/react-carousel.es.css";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -41,7 +33,7 @@ const Galeria2 = () => {
                     {Object.entries(galeria2).map((t, k) => (
                         <SwiperSlide>
                             <div key={k[0]} className="swiper_slide_homepage">
-                                <img src={t[1]} alt="" />
+                                <img src={t[1]} alt="" style={{aspectRatio:4/5}}/>
                             </div>
                         </SwiperSlide>
                     ))}

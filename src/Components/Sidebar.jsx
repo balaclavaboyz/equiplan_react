@@ -1,21 +1,4 @@
-import React, { useState } from "react";
-import {
-    ProSidebar,
-    Menu as MenuFromSidebar,
-    MenuItem,
-    SidebarHeader,
-    SidebarFooter,
-    SidebarContent,
-} from "react-pro-sidebar";
-import { FaList, FaRegHeart } from "react-icons/fa";
-import {
-    FiHome,
-    FiLogOut,
-    FiArrowLeftCircle,
-    FiArrowRightCircle,
-} from "react-icons/fi";
-import { RiPencilLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
+import React, { UseState } from "react";
 import "react-pro-sidebar/dist/css/styles.css";
 import Img from "react-cool-img";
 import { Link } from "react-router-dom";
@@ -24,11 +7,14 @@ import { Nav, Container, Row, Col } from "react-bootstrap";
 import { slide as Burger } from "react-burger-menu";
 
 const Sidebar = () => {
+    const sidebarStatus=()=>{
+      const [open,setOpen]=UseState(false)
+    }
     return (
         <>
             <div id="burger">
-                <Burger width={'150px'}>
-                    <Link to="/">Home</Link>
+                <Burger width={'150px'} > 
+                    <Link to="/" >Home</Link>
                     <Link to="/imoveis">Imóveis</Link>
                     <Link to="/faq">Faq</Link>
                     <Link to="/contato">Contato</Link>

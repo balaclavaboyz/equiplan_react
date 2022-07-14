@@ -47,7 +47,7 @@ body {
   width: 100%;
 }
 .swiper_container_homepage{
-  height: 600px;
+  height: 500px;
 }
 .swiper_container{
   height: 100%;
@@ -62,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 500px;
 }
 .link_rapidos {
   display: flex;
