@@ -1,29 +1,70 @@
+import shutil
+
+
 def give_only_ref():
     import pandas
     import codecs
     import os
     import re
+    import zipfile
 
     if os.path.getsize('temp') == 0:
-        list_local_files=[]
-        list_imoveis_only_file=[]
-        for path in os.listdir('./'):
-            if os.path.isfile(os.path.join('./',path)):
-                list_local_files.append(path)
-        for i in list_local_files:
-            if re.search(r'^imovel',i):
-                list_imoveis_only_file.append(i)
+        # list all zip files in zip_entrada folder
+        list_zip_dir=[]
+        list_zip_files=[]
+        for path in os.listdir('./zip_entrada/'):
+            if os.path.isfile(os.path.join('./zip_entrada/',path)):
+                list_zip_dir.append(path)
+        for i in list_zip_dir:
+            if re.search(r'zip$',i):
+                list_zip_files.append(i)
+        # ask user which zip to use
         j=0
+        name_of_zipfile=''
         while(True):
-            for i in list_imoveis_only_file:
+            for i in list_zip_files:
                 print(j,i)
                 j=j+1
-            escolha=int(input('Escolha o numbero do arquivo: '))
+            escolha=int(input('Escolha o numero do zip: '))
             if escolha >=0 and escolha <=j-1:
-                nome_arquivo_csv=list_imoveis_only_file[escolha]
+                name_of_zipfile=list_zip_files[escolha]
                 break
             else:
-                escolha=input('Escolha o arquivo csv: ')
+                escolha=int(input('Escolha o arquivo zip denovo: '))
+        # unzip file choosen
+        print('limpando o temp')
+        shutil.rmtree('./zip_entrada/temp')
+        os.makedirs('./zip_entrada/temp')
+        print('extraindo')
+        with zipfile.ZipFile('./zip_entrada/'+name_of_zipfile,'r') as f:
+            f.extractall('./zip_entrada/temp')
+            print('extraido os arquivo no dir temp')
+        # move zip file to archive
+        print('movendo o arquivo'+name_of_zipfile+' para a pasta zip_guardados')
+        os.rename('./zip_entrada/'+name_of_zipfile,'./zip_guardados/'+name_of_zipfile)
+        print('movido')
+
+        # setting the csv as the main file to be used
+        nome_arquivo_csv=name_of_zipfile[:-4]+'.csv'
+        # list_local_files=[]
+        # list_imoveis_only_file=[]
+        # for path in os.listdir('./'):
+        #     if os.path.isfile(os.path.join('./',path)):
+        #         list_local_files.append(path)
+        # for i in list_local_files:
+        #     if re.search(r'^imovel',i):
+        #         list_imoveis_only_file.append(i)
+        # j=0
+        # while(True):
+        #     for i in list_imoveis_only_file:
+        #         print(j,i)
+        #         j=j+1
+        #     escolha=int(input('Escolha o numero do arquivo: '))
+        #     if escolha >=0 and escolha <=j-1:
+        #         nome_arquivo_csv=list_imoveis_only_file[escolha]
+        #         break
+        #     else:
+        #         escolha=input('Escolha o arquivo csv: ')
 
         with open('temp','w') as f:
             f.write(nome_arquivo_csv)
@@ -32,7 +73,7 @@ def give_only_ref():
             nome_arquivo_csv = f.read()
 
     BLOCKSIZE = 1048576  # or some other, desired size in bytes
-    with codecs.open(nome_arquivo_csv, "r", "ISO-8859-1") as sourceFile:
+    with codecs.open('./zip_entrada/temp/'+nome_arquivo_csv, "r", "ISO-8859-1") as sourceFile:
         with codecs.open('temp.csv', "w", "utf-8") as targetFile:
             while True:
                 contents = sourceFile.read(BLOCKSIZE)

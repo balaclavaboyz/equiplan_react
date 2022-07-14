@@ -24,3 +24,5 @@ yarn-error.log*
 
 temp
 *.csv
+
+./zip_entrada/temp
