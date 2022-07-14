@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IM80018 from "./IM80018.jsx"
+import IM80018 from "./imoveis/IM80018.jsx"
 import '../../assets/table.css'
 
 export default function Imoveis() {
