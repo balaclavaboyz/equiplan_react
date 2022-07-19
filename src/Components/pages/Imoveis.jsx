@@ -21,7 +21,6 @@ export default function Imoveis() {
                         </thead>
                         <tbody>
                             <span id="insertion_table"></span>
-<tr id="IM80086"><th><Link to="/IM80086">IM80086</Link></th><th>Casa em Vila Mariana com 152m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 800.000,00</th></tr>
 <tr id="IM80058"><th><Link to="/IM80058">IM80058</Link></th><th>Casa em Perdizes com 110m²</th><th>Aluguel</th><th>R$ 4.000,00</th><th>R$ 0,00</th></tr>
 <tr id="IM80109"><th><Link to="/IM80109">IM80109</Link></th><th>Loja em Santo Amaro com 140m²</th><th>Aluguel</th><th>R$ 24.000,00</th><th>R$ 0,00</th></tr>
 <tr id="IM80117"><th><Link to="/IM80117">IM80117</Link></th><th>Casa em Jardim Piracuama</th><th>Venda</th><th>R$ 0,00</th><th>R$ 250.000,00</th></tr>
