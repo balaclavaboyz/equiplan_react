@@ -21,6 +21,7 @@ export default function Imoveis() {
                         </thead>
                         <tbody>
                             <span id="insertion_table"></span>
+<tr id="IM80109"><th><Link to="/IM80109">IM80109</Link></th><th>Loja em Santo Amaro com 140m²</th><th>Aluguel</th><th>R$ 24.000,00</th><th>R$ 0,00</th></tr>
                             <tr id="IM80116">
                                 <th>
                                     <Link to="/IM80116">IM80116</Link>
