@@ -21,14 +21,23 @@ export default function Imoveis() {
                         </thead>
                         <tbody>
                             <span id="insertion_table"></span>
-<tr id="IM80116"><th><Link to="/IM80116">IM80116</Link></th><th>Prédio Comercial em Jardim Paulistano com 1156m²</th><th>Aluguel</th><th>R$ 80.000,00</th><th>R$ 0,00</th></tr>
+                            <tr id="IM80116">
                                 <th>
+                                    <Link to="/IM80116">IM80116</Link>
                                 </th>
-                                <th>Casa em Vila da Saúde com 80m²</th>
+                                <th>
+                                    Prédio Comercial em Jardim Paulistano com
+                                    1156m²
+                                </th>
                                 <th>Aluguel</th>
-                                <th>R$ 2.500,00</th>
+                                <th>R$ 80.000,00</th>
                                 <th>R$ 0,00</th>
                             </tr>
+                            <th></th>
+                            <th>Casa em Vila da Saúde com 80m²</th>
+                            <th>Aluguel</th>
+                            <th>R$ 2.500,00</th>
+                            <th>R$ 0,00</th>
                         </tbody>
                     </table>
                 </div>
