@@ -33,11 +33,6 @@ export default function Imoveis() {
                                 <th>R$ 80.000,00</th>
                                 <th>R$ 0,00</th>
                             </tr>
-                            <th></th>
-                            <th>Casa em Vila da Saúde com 80m²</th>
-                            <th>Aluguel</th>
-                            <th>R$ 2.500,00</th>
-                            <th>R$ 0,00</th>
                         </tbody>
                     </table>
                 </div>
