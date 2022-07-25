@@ -37,7 +37,7 @@ const Footer = () => {
   }
   return (
     <>
-      <a href="https://wa.me/5511973364612" style={botaoStyleWhatsapp}>
+      <a href="https://whatsa.me/5511973364612/?t=ol%C3%A1,%20gostaria%20de%20marcar%20uma%20visita" style={botaoStyleWhatsapp}>
         <Img src={whats} alt="whatsapp contato" width="64" height="64"></Img>
       </a>
       <a href="tel:+5511973364612" style={phoneStyle}>
