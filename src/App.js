@@ -6,7 +6,7 @@ import Politica from "./Components/pages/Politica";
 import Faq from "./Components/pages/Faq";
 import Contato from "./Components/pages/contato";
 import Missao from "./Components/pages/missao";
-import WhatsappIcon from "./Components/WhatsappIcon";
+import FloatingIcons from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
 import IM80045 from "./Components/pages/imoveis/IM80045";
@@ -35,7 +35,7 @@ const App = () => {
                 </div>
             </div>
             <Footer />
-            <WhatsappIcon />
+            <FloatingIcons />
         </>
     );
 };
