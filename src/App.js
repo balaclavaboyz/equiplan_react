@@ -9,10 +9,10 @@ import Missao from "./Components/pages/missao";
 import FloatingIcons from "./Components/WhatsappIcon";
 import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
-import IM80045 from "./Components/pages/imoveis/IM80045";
-import IM80182 from "./Components/pages/imoveis/IM80182";
-import IM80109 from "./Components/pages/imoveis/IM80109";
 import IM80116 from "./Components/pages/imoveis/IM80116";
+import IM80109 from "./Components/pages/imoveis/IM80109";
+import IM80182 from "./Components/pages/imoveis/IM80182";
+import IM80045 from "./Components/pages/imoveis/IM80045";
 
 const App = () => {
     return (
@@ -27,10 +27,10 @@ const App = () => {
                         <Route path="contato" element={<Contato />} />
                         <Route path="missao" element={<Missao />} />
                         <Route path="imoveis" element={<Imoveis />} />
-                        <Route path="IM80045" element={<IM80045 />} />
-                        <Route path="IM80182" element={<IM80182 />} />
-                        <Route path="IM80109" element={<IM80109 />} />
                         <Route path="IM80116" element={<IM80116 />} />
+                        <Route path="IM80109" element={<IM80109 />} />
+                        <Route path="IM80182" element={<IM80182 />} />
+                        <Route path="IM80045" element={<IM80045 />} />
                     </Routes>
                 </div>
             </div>

@@ -90,7 +90,8 @@ def give_only_ref():
 def csv_to_page():
     import codecs
     import json
-    
+    import os
+    googleapi=os.environ.get('googleapi') 
 
     csv = give_only_ref()
 
@@ -103,7 +104,7 @@ def csv_to_page():
     descricao = csv['Descrição'].loc[csv.index[0]]
     endereco_googlemaps = endereco.replace(" ", "%20")
 
-    r=requests.get(f'https://maps.googleapis.com/maps/api/geocode/json?address={endereco}&key=AIzaSyBJyXKLWxmKtegxMsbSx4u9CfvxdE1geYY')
+    r=requests.get(f'https://maps.googleapis.com/maps/api/geocode/json?address={endereco}&key={googleapi}')
     jsonObject=json.loads(r.text)
 
     lat=(jsonObject['results'][0]['geometry']['location']['lat'])

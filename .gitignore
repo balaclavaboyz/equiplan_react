@@ -26,3 +26,5 @@ temp
 *.csv
 
 ./zip_entrada/temp
+
+googleapi
