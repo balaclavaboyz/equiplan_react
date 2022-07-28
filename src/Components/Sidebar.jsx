@@ -134,6 +134,12 @@ const Sidebar = () => {
                     </div>
                 </Row>
             </Container>
+            <Container>
+                
+                <Row id='mobile_creci'>
+                    <b style={{textAlign:'center'}}>CRECI-J35272</b>
+                </Row>
+            </Container>
         </>
     );
 };
