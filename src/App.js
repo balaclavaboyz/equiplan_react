@@ -12,7 +12,6 @@ import Imoveis from "./Components/pages/Imoveis";
 import IM80198 from "./Components/pages/imoveis/IM80198";
 import IM80221 from "./Components/pages/imoveis/IM80221";
 import IM80270 from "./Components/pages/imoveis/IM80270";
-import IM80301 from "./Components/pages/imoveis/IM80301";
 import IM80045 from "./Components/pages/imoveis/IM80045";
 
 const App = () => {
@@ -31,7 +30,6 @@ const App = () => {
                         <Route path="IM80198" element={<IM80198 />} />
                         <Route path="IM80221" element={<IM80221 />} />
                         <Route path="IM80270" element={<IM80270 />} />
-                        <Route path="IM80301" element={<IM80301 />} />
                         <Route path="IM80045" element={<IM80045 />} />
                     </Routes>
                 </div>
