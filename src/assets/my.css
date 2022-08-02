@@ -159,7 +159,25 @@ body {
   display: none;
 }
 
+@media screen and (max-height:1600px){
+  .swiper_container_homepage{
+    height: 400px;
+  }
+  .swiper_slide_homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+}
+
 @media screen and (max-width: 1024px) {
+  #mobile_creci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #burger{
     display: block;
   }

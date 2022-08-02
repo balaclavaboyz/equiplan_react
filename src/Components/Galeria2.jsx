@@ -39,32 +39,6 @@ const Galeria2 = () => {
                     ))}
                 </Swiper>
             </div>
-            {/* <div className="container">
-                <div className="galeria_wrapper">
-                    <Carousel enableAutoPlay isRTL breakPoints={breakPoints}>
-                        <Galeria_homepage />
-                    </Carousel>
-                </div>
-            </div> */}
-            {/* <CarouselProvider
-                naturalSlideWidth={4}
-                naturalSlideHeight={5}
-                totalSlides={Object.keys(galeria2).length}
-            >
-                <Slider>
-                    {Object.entries(galeria2).map(
-                        (t, k) => (
-                              <div key={k}>
-                            <Slide index={k}>
-                                <img src={t[1]} alt="test" />
-                            </Slide>
-                              </div>
-                        )
-                    )}
-                </Slider>
-                <ButtonBack>Back</ButtonBack>
-                <ButtonNext>Next</ButtonNext>
-            </CarouselProvider> */}
         </>
     );
 };
