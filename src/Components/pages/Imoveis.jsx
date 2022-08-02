@@ -21,6 +21,7 @@ export default function Imoveis() {
                         </thead>
                         <tbody>
                             <span id="insertion_table"></span>
+<tr id="IM80270"><th><Link to="/IM80270">IM80270</Link></th><th>Casa em Vila Clementino com 280m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 3.500.000,00</th></tr>
 <tr id="IM80301"><th><Link to="/IM80301">IM80301</Link></th><th>Casa em Lapa com 343m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 2.190.000,00</th></tr>
 <tr id="IM80045"><th><Link to="/IM80045">IM80045</Link></th><th>Casa em Brooklin Paulista com 174m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.450.000,00</th></tr>
                                 <th>
