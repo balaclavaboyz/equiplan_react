@@ -91,7 +91,9 @@ def csv_to_page():
     import codecs
     import json
     import os
-    googleapi=os.environ.get('googleapi') 
+    from dotenv import dotenv_values
+    config=dotenv_values('.env')
+    googleapi=config['GOOGLE_API']
 
     csv = give_only_ref()
 
@@ -103,10 +105,12 @@ def csv_to_page():
     valor_venda = csv['Valor Venda'].loc[csv.index[0]]
     descricao = csv['Descrição'].loc[csv.index[0]]
     endereco_googlemaps = endereco.replace(" ", "%20")
+    print(googleapi)
 
     r=requests.get(f'https://maps.googleapis.com/maps/api/geocode/json?address={endereco}&key={googleapi}')
     jsonObject=json.loads(r.text)
 
+    print(jsonObject)
     lat=(jsonObject['results'][0]['geometry']['location']['lat'])
     lng=(jsonObject['results'][0]['geometry']['location']['lng'])
 
