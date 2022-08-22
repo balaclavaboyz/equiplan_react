@@ -29,6 +29,7 @@ const App = () => {
                         <Route path="IM80442" element={<IM80442 />} />
                         <Route path="IM79968" element={<IM79968 />} />
                         <Route path="IM80045" element={<IM80045 />} />
+                        <Route path='1' element={<IM80045/>}></Route>
                     </Routes>
                 </div>
             </div>
