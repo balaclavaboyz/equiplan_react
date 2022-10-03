@@ -68,7 +68,7 @@ export default function IM80045() {
                                 </p>
                                 <p>Finalidade: Venda</p>
                                 <p>Valor da Locação: R$ 0,00</p>
-                                <p>Valor da Venda: R$ 1.450.000,00</p>
+                                <p>Valor da Venda: R$ 1.450.000,00 / valor sujeito a confirmação</p>
                                 <hr />
                                 <h2>Descrição</h2>
                                 <p>
@@ -76,7 +76,7 @@ export default function IM80045() {
                                     sala 2 ambientes, lavabo, cozinha, copa,
                                     quintal com entrada lateral. Nos fundos
                                     lavanderia e um salão com banheiro, garagem
-                                    coberta p/ 3 carros. IPTU:.R$497,74
+                                    coberta p/ 3 carros.
                                 </p>
                                 <hr />
                                 <InnerHTML

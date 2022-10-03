@@ -68,7 +68,7 @@ export default function IM80655() {
                                 </p>
                                 <p>Finalidade: Venda</p>
                                 <p>Valor da Locação: R$ 0,00</p>
-                                <p>Valor da Venda: R$ 2.438.000,00 / Comissão Inclusa</p>
+                                <p>Valor da Venda: R$ 2.438.000,00 / valor sujeito a confirmação</p>
                                 <hr />
                                 <h2>Descrição</h2>
                                 <p>
@@ -76,7 +76,7 @@ export default function IM80655() {
                                     escritório, sala de jantar, edícula no fundo
                                     com quarto e cozinha independente, quarto e
                                     banheiro de empregada, piscina aquecida,
-                                    churrasqueira, 6 vagas. IPTU:.R$1.611,85
+                                    churrasqueira, 6 vagas.
                                 </p>
                                 <hr />
                                 <InnerHTML
