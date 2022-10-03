@@ -22,7 +22,6 @@ export default function Imoveis() {
                         <tbody>
                             <span id="insertion_table"></span>
 <tr id="IM80655"><th><Link to="/IM80655">IM80655</Link></th><th>Casa em Alto da Lapa com 297m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 2.438.000,00</th></tr>
-<tr id="IM79968"><th><Link to="/IM79968">IM79968</Link></th><th>Casa em Vila Romana com 170m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.480.000,00</th></tr>
 <tr id="IM80045"><th><Link to="/IM80045">IM80045</Link></th><th>Casa em Brooklin Paulista com 174m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.450.000,00</th></tr>
                         </tbody>
                     </table>
