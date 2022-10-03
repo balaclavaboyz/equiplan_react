@@ -12,6 +12,7 @@ import Imoveis from "./Components/pages/Imoveis";
 import IM80655 from "./Components/pages/imoveis/IM80655";
 import IM79968 from "./Components/pages/imoveis/IM79968";
 import IM80045 from "./Components/pages/imoveis/IM80045";
+import Manu from './Components/Manu'
 
 const App = () => {
     return (
@@ -20,7 +21,7 @@ const App = () => {
                 <Sidebar />
                 <div className="content_wrapper">
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        {/* <Route path="/" element={<Home />} />
                         <Route path="faq" element={<Faq />} />
                         <Route path="politica" element={<Politica />} />
                         <Route path="contato" element={<Contato />} />
@@ -30,7 +31,8 @@ const App = () => {
                         <Route path="IM80045" element={<IM80045 />} />
                         <Route path="IM80655" element={<IM80655></IM80655>}></Route>
                         <Route path='1' element={<IM80045/>}></Route>
-                        <Route path="2" element={<IM80655 />} />
+                        <Route path="2" element={<IM80655 />} /> */}
+                        <Route path="*" element={<Manu></Manu>}></Route>
                     </Routes>
                 </div>
             </div>
