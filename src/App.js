@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Imoveis from "./Components/pages/Imoveis";
 import IM80655 from "./Components/pages/imoveis/IM80655";
 import IM80045 from "./Components/pages/imoveis/IM80045";
+import Manu from './Components/Manu'
 
 const App = () => {
     return (
