@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import React from "react";
 import InnerHTML from "dangerously-set-html-content";
-export default function IM80045() {
+export default function IM80959() {
     function importAll(r) {
         let images = {};
         r.keys().forEach((item, index) => {
@@ -17,12 +17,12 @@ export default function IM80045() {
     }
     const imgs = importAll(
         require.context(
-            `../../../assets/imoveis/IM80045`,
+            `../../../assets/imoveis/IM80959`,
             false,
             /\.(png|jpe?g|svg|webp)$/
         )
     );
-    const googleMaps = `<div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=Rua%20Luisiania,%20718%20-%20%20São%20Paulo%20/%20SP%20Apt/Sala:%20%20-%20%20Bloco:%20-%20Andar:%20&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://googlemapsiframegenerator.com" style="display:none">Google Maps Iframe Generator - Free Html Embed Code</a><style>.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>`;
+    const googleMaps = `<div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=Rua%20Fazenda%20Monte%20Alegre,%20399%20-%20%20São%20Paulo%20/%20SP%20Apt/Sala:%20%20-%20%20Bloco:%20-%20Andar:%20&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style><a href="https://googlemapsiframegenerator.com" style="display:none">Google Maps Iframe Generator - Free Html Embed Code</a><style>.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>`;
     return (
         <>
             <div className="container">
@@ -61,26 +61,24 @@ export default function IM80045() {
                             </div>
                             <div className="imoveis_desp">
                                 <hr />
-                                <h1>Casa em Brooklin Paulista com 174m²</h1>
+                                <h1>
+                                    Prédio Comercial + Galpão em Jaraguá com
+                                    700m²
+                                </h1>
                                 <p>
-                                    Rua Luisiania, 718 - São Paulo / SP
-                                    Apt/Sala: - Bloco: - Andar:{" "}
+                                    Rua Fazenda Monte Alegre, 399 - São Paulo /
+                                    SP Apt/Sala: - Bloco: - Andar:{" "}
                                 </p>
                                 <p>Finalidade: Venda</p>
                                 <p>Valor da Locação: R$ 0,00</p>
-<<<<<<< HEAD
-                                <p>Valor da Venda: R$ 1.450.000,00 / valor sujeito a confirmação </p>
-=======
-                                <p>Valor da Venda: R$ 1.450.000,00 / valor sujeito a confirmação</p>
->>>>>>> d5d4de209b4d85b22f4641ad5aeb6ba4a410c4fc
+                                <p>Valor da Venda: R$ 1.590.000,00</p>
                                 <hr />
                                 <h2>Descrição</h2>
                                 <p>
-                                    Casa com 3 dormitórios, 1 banheiro social,
-                                    sala 2 ambientes, lavabo, cozinha, copa,
-                                    quintal com entrada lateral. Nos fundos
-                                    lavanderia e um salão com banheiro, garagem
-                                    coberta p/ 3 carros.
+                                    Piso superior: amplo escritório, 1 cozinha,
+                                    3 banheiros. Piso inferior: 1 quarto, 1
+                                    cozinha, 2 vestiários e amplo galpão.
+                                    Valor sujeito a atualização.
                                 </p>
                                 <hr />
                                 <InnerHTML
@@ -93,7 +91,7 @@ export default function IM80045() {
                 </div>
             </div>
             <a
-                href="http://maps.google.com/maps?q=&layer=c&cbll=-23.6076894,-46.6830337&cbp=11,0,0,0,0"
+                href="http://maps.google.com/maps?q=&layer=c&cbll=-23.4827108,-46.7587534&cbp=11,0,0,0,0"
                 style={{
                     position: "fixed",
                     zIndex: 99,
