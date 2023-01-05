@@ -38,6 +38,7 @@ const App = () => {
                         <Route path="2" element={<IM80655 />} />
                         <Route path='3' element={<IM80959></IM80959>}></Route>
 <Route path="5" element={<IM81362 />} />
+<Route path="l1" element={<IM81289 />} />
                     </Routes>
                 </div>
             </div>
