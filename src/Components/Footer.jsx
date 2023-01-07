@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="footer_wrapper">
         <div className="copy">
-          <p>&copy;Peter Kim 2022</p>
+          <p>&copy;Peter Kim 2023</p>
         </div>
       </div>
     </>
