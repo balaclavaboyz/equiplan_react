@@ -71,7 +71,7 @@ export default function IM80959() {
                                 </p>
                                 <p>Finalidade: Venda</p>
                                 <p>Valor da Locação: R$ 0,00</p>
-                                <p>Valor da Venda: R$ 1.590.000,00</p>
+                                <p>Valor da Venda: R$ 1.590.000,00 / Valor Sujeito a Confirmação</p>
                                 <hr />
                                 <h2>Descrição</h2>
                                 <p>
