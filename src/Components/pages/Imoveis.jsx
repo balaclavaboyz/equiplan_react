@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
+import logo from '../../assets/galeria_2/2.png'
 
 export default function Imoveis() {
     return (
@@ -9,7 +10,7 @@ export default function Imoveis() {
             <div className="container">
                 <div className="indice_imoveis_wrapper">
                     <h1>Valores Sujeitos a Confirmação</h1>
-                    <table className="rtable rtable--flip">
+                    {/* <table className="rtable rtable--flip">
                         <thead>
                             <tr>
                                 <th>Código</th>
@@ -27,7 +28,14 @@ export default function Imoveis() {
 <tr id="IM80655"><th><Link to="/IM80655">IM80655</Link></th><th>Casa em Alto da Lapa com 297m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 2.438.000,00</th></tr>
 <tr id="IM80045"><th><Link to="/IM80045">IM80045</Link></th><th>Casa em Brooklin Paulista com 174m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.450.000,00</th></tr>
                         </tbody>
-                    </table>
+                    </table> */}
+                    <div className="grid">
+                        <div><a href="/im81289"><div className="inside_image">IM81289</div><img src={logo} alt="link imovel im81289" ></img></a></div>
+                        <div><a href="/im81362"><div className="inside_image">IM81362</div><img src={logo} alt="link imovel im81362" ></img></a></div>
+                        <div><a href="/im80959"><div className="inside_image">IM80959</div><img src={logo} alt="link imovel im80959" ></img></a></div>
+                        <div><a href="/im80655"><div className="inside_image">IM80655</div><img src={logo} alt="link imovel im80655" ></img></a></div>
+                        <div><a href="/im80045"><div className="inside_image">IM80045</div><img src={logo} alt="link imovel im80045" ></img></a></div>
+                    </div>
                 </div>
             </div>
         </>
