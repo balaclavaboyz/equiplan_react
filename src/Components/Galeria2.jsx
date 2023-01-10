@@ -40,11 +40,9 @@ const Galeria2 = () => {
                 </Swiper>
             </div> */}
                     {Object.entries(galeria2).map((t, k) => (
-                        <SwiperSlide>
                             <div key={k[0]} className="center">
-                                <img src={t[1]} alt="" style={{aspectRatio:5/5}}/>
+                                <img src={t[1]} alt=""/>
                             </div>
-                        </SwiperSlide>
                     ))}
         </>
     );
