@@ -8,7 +8,7 @@ export default function Imoveis() {
         <>
             <div className="container">
                 <div className="indice_imoveis_wrapper">
-                    <h1>Casas / Lojas</h1>
+                    <h1>Valores Sujeitos a Confirmação</h1>
                     <table className="rtable rtable--flip">
                         <thead>
                             <tr>
