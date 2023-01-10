@@ -35,11 +35,11 @@ export default function Imoveis() {
                         </tbody>
                     </table> */}
                     <div className="grid">
-                        <div><a href="/im81289"><div className="inside_image">IM81289</div><img src={im80045} alt="link imovel im81289" ></img></a></div>
-                        <div><a href="/im81362"><div className="inside_image">IM81362</div><img src={im80655} alt="link imovel im81362" ></img></a></div>
+                        <div><a href="/im81289"><div className="inside_image">IM81289</div><img src={im81289} alt="link imovel im81289" ></img></a></div>
+                        <div><a href="/im81362"><div className="inside_image">IM81362</div><img src={im81362} alt="link imovel im81362" ></img></a></div>
                         <div><a href="/im80959"><div className="inside_image">IM80959</div><img src={im80959} alt="link imovel im80959" ></img></a></div>
-                        <div><a href="/im80655"><div className="inside_image">IM80655</div><img src={im81289} alt="link imovel im80655" ></img></a></div>
-                        <div><a href="/im80045"><div className="inside_image">IM80045</div><img src={im81362} alt="link imovel im80045" ></img></a></div>
+                        <div><a href="/im80655"><div className="inside_image">IM80655</div><img src={im80655} alt="link imovel im80655" ></img></a></div>
+                        <div><a href="/im80045"><div className="inside_image">IM80045</div><img src={im80045} alt="link imovel im80045" ></img></a></div>
                     </div>
                 </div>
             </div>
