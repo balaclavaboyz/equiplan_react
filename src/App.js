@@ -43,7 +43,7 @@ const App = () => {
                 </div>
             </div>
             <Footer />
-            <FloatingIcons />
+            {/* <FloatingIcons /> */}
         </>
     );
 };
