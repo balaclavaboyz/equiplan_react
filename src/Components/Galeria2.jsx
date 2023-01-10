@@ -39,7 +39,6 @@ const Galeria2 = () => {
                     ))}
                 </Swiper>
             </div> */}
-            //temp
                     {Object.entries(galeria2).map((t, k) => (
                         <SwiperSlide>
                             <div key={k[0]} className="center">
