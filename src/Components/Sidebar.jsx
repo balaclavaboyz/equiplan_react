@@ -95,7 +95,7 @@ const Sidebar = () => {
                                     CONTATO
                                 </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
+                            {/* <Nav.Item>
                                 <Nav.Link
                                     as={Link}
                                     to="missao"
@@ -107,7 +107,7 @@ const Sidebar = () => {
                                 >
                                     MISSÃO
                                 </Nav.Link>
-                            </Nav.Item>
+                            </Nav.Item> */}
                             <Nav.Item>
                                 <Nav.Link
                                     as={Link}
