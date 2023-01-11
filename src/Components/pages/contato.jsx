@@ -11,7 +11,7 @@ const Faq = () => {
         <h2>Escreva suas dúvidas</h2>
         <p>Whatsapp: <a href="https://wa.me/5511988109466">(11)98810-9466</a></p>
         <p>E-mail: <a href="mailto:equiplan@equiplan.com.br">equiplan@equiplan.com.br</a> </p>
-        <p>Contato: <a href="tel:11988109466">(11)98810-9466</a></p>
+        {/* <p>Contato: <a href="tel:11988109466">(11)98810-9466</a></p> */}
       </Row>
     </Container>
   );
