@@ -38,7 +38,7 @@ const Sidebar = () => {
                                 textDecoration: "inherit",
                             }}
                         >
-                            <Img src={logo} alt="logo_milvest" width="100px" />
+                            <Img src={logo} alt="logo" width="100px" />
                         </Link>
                     </Col>
                     <Col>
