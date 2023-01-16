@@ -14,7 +14,6 @@ export default function Imoveis() {
         <>
             <div className="container">
                 <div className="indice_imoveis_wrapper">
-                    <h1>Valores Sujeitos a Confirmação</h1>
                     {/* <table className="rtable rtable--flip">
                         <thead>
                             <tr>
