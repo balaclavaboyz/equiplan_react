@@ -42,9 +42,10 @@ def give_only_ref():
             f.extractall('./zip_entrada/temp')
             print('extraido os arquivo no dir temp')
         # move zip file to archive
-        print('movendo o arquivo'+name_of_zipfile+' para a pasta zip_guardados')
-        os.rename('./zip_entrada/'+name_of_zipfile,'./zip_guardados/'+name_of_zipfile)
-        print('movido')
+        # print('movendo o arquivo'+name_of_zipfile+' para a pasta zip_guardados')
+        # os.rename('./zip_entrada/'+name_of_zipfile,'./zip_guardados/'+name_of_zipfile)
+        os.remove('./zip_entrada/'+name_of_zipfile)
+        # print('movido')
 
         # setting the csv as the main file to be used
         nome_arquivo_csv=name_of_zipfile[:-4]+'.csv'
