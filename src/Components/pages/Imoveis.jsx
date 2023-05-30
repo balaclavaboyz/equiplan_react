@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
 import logo from '../../assets/galeria_2/2.png'
+import IM83699 from '../../assets/imoveis/IM83699/0.jpg'
 import im80045 from '../../assets/imoveis/IM80045/0.jpg'
 import im80655 from '../../assets/imoveis/IM80655/0.jpg'
 import im80959 from '../../assets/imoveis/IM80959/0.jpg'
@@ -17,6 +18,7 @@ export default function Imoveis() {
                 <div className="indice_imoveis_wrapper">
                     <div className="grid">
                         <span id='insert'></span>
+<tr id="IM83699"><th><Link to="/IM83699">IM83699</Link></th><th>Galpão em Água Funda com 232m²</th><th>Aluguel</th><th>R$ 6.000,00</th><th>R$ 0,00</th></tr>
                         <div><a href="/im80959"><div className="inside_image">IM80959</div><img src={im80959} alt="link imovel im80959" ></img></a></div>
                         <div><a href="/im80655"><div className="inside_image">IM80655</div><img src={im80655} alt="link imovel im80655" ></img></a></div>
                         <div><a href="/im80045"><div className="inside_image">IM80045</div><img src={im80045} alt="link imovel im80045" ></img></a></div>
