@@ -8,6 +8,7 @@ import im80655 from '../../assets/imoveis/IM80655/0.jpg'
 import im80959 from '../../assets/imoveis/IM80959/0.jpg'
 import im81362 from '../../assets/imoveis/IM81362/0.jpg'
 import im83609 from '../../assets/imoveis/IM83609/0.jpg'
+import './span.css'
 
 export default function Imoveis() {
     return (
