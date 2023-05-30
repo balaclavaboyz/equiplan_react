@@ -168,17 +168,14 @@ def csv_to_page():
         write_file = open('./src/Components/pages/Imoveis.jsx', 'w',encoding='utf-8')
         for line in inputfile:
             write_file.write(line)
-            if "                        <span id=\"insertion_table\"></span>" in line:
+            if "import logo from '../../assets/galeria_2/2.png'" in line:
+                insert_line=f'import {ref} from \'../../assets/imoveis/{ref}/0.jpg\''
+                write_file.write(insert_line + "\n")
+            if "                        <span id='insert'></span>" in line:
                 new_line = "<tr id=\""+ref+"\"><th><Link to=\"/"+ref+"\">"+ref+"</Link></th><th>"+titulo+"</th><th>"+finalidade+"</th><th>"+valor_locacao+"</th><th>"+valor_venda+"</th></tr>"
                 write_file.write(new_line + "\n")
                 print('Criado link no indice' + ref)
-            # if "                <h1>Casas / Lojas Comerciais</h1>" in line:
-            #     new_line = "                <div style={{display:'flex',gap:'1rem'}}><Link to=\"/"+ref+"\">"+ref+"</Link><p>"+titulo+"</p><p>Tipo: "+finalidade+"</p><p>Valor Locação: "+valor_locacao+"</p><p>Valor Venda: "+valor_venda+"</p></div>"
-            #     write_file.write(new_line + "\n")
-            #     print('Criado link no indice' + ref)
         write_file.close()
-
-    
 
 def make_qrcode():
     import qrcode
@@ -188,7 +185,6 @@ def make_qrcode():
     img = qrcode.make('https://equiplan.com.br/'+ref)
     img.save('./QR CODE DOS IMOVEIS/'+ref+'.png')
     print('criado e salvo como '+ref+'.png\n')
-
 
 def move_imgs():
     csv = give_only_ref()

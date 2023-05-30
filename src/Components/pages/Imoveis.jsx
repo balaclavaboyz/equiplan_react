@@ -14,32 +14,13 @@ export default function Imoveis() {
         <>
             <div className="container">
                 <div className="indice_imoveis_wrapper">
-                    {/* <table className="rtable rtable--flip">
-                        <thead>
-                            <tr>
-                                <th>Código</th>
-                                <th>Título</th>
-                                <th>Tipo</th>
-                                <th>Locação</th>
-                                <th>Venda</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <span id="insertion_table"></span>
-<tr id="IM83609"><th><Link to="/IM83609">IM83609</Link></th><th>Galpão em Água Branca com 657m²</th><th>Venda e Aluguel</th><th>R$ 25.000,00</th><th>R$ 4.800.000,00</th></tr>
-<tr id="IM81362"><th><Link to="/IM81362">IM81362</Link></th><th>Casa em Vila Cordeiro com 120m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.300.000,00</th></tr>
-<tr id="IM80959"><th><Link to="/IM80959">IM80959</Link></th><th>Prédio Comercial + Galpão em Jaraguá com 700m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.590.000,00</th></tr>
-<tr id="IM80655"><th><Link to="/IM80655">IM80655</Link></th><th>Casa em Alto da Lapa com 297m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 2.438.000,00</th></tr>
-<tr id="IM80045"><th><Link to="/IM80045">IM80045</Link></th><th>Casa em Brooklin Paulista com 174m²</th><th>Venda</th><th>R$ 0,00</th><th>R$ 1.450.000,00</th></tr>
-                        </tbody>
-                    </table> */}IM83609
                     <div className="grid">
-                        
+                        <span id='insert'></span>
                         <div><a href="/im80959"><div className="inside_image">IM80959</div><img src={im80959} alt="link imovel im80959" ></img></a></div>
                         <div><a href="/im80655"><div className="inside_image">IM80655</div><img src={im80655} alt="link imovel im80655" ></img></a></div>
                         <div><a href="/im80045"><div className="inside_image">IM80045</div><img src={im80045} alt="link imovel im80045" ></img></a></div>
 						<div><a href="/im83609"><div className="inside_image">IM83609</div><img src={im83609} alt="link imovel im83609" ></img></a></div>
-			<div><a href="/im81362"><div className="inside_image">IM81362</div><img src={im81362} alt="link imovel im81362" ></img></a></div>
+                        <div><a href="/im81362"><div className="inside_image">IM81362</div><img src={im81362} alt="link imovel im81362" ></img></a></div>
                     </div>
                 </div>
             </div>
