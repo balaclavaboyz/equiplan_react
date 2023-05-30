@@ -173,7 +173,7 @@ def csv_to_page():
                 insert_line=f'import {ref} from \'../../assets/imoveis/{ref}/0.jpg\''
                 write_file.write(insert_line + "\n")
             if "                        <span id='insert'></span>" in line:
-                new_line = "<tr id=\""+ref+"\"><th><Link to=\"/"+ref+"\">"+ref+"</Link></th><th>"+titulo+"</th><th>"+finalidade+"</th><th>"+valor_locacao+"</th><th>"+valor_venda+"</th></tr>"
+                new_line="                        <div><a href=\"/"+ref+"\"><div className=\"inside_image\">"+ref.upper()+"</div><img src={"+ref+"} alt=\"link imovel "+ref+"\" ></img></a></div>"
                 write_file.write(new_line + "\n")
                 print('Criado link no indice' + ref)
         write_file.close()
