@@ -47,6 +47,8 @@ body {
 }
 .content_wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .swiper_container_homepage{
   height: 1000px;
@@ -248,6 +250,9 @@ body {
   }
   .content_wrapper {
     min-height: 500px;
+  }
+  #banner{
+    width:100%
   }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
-import logo from '../../assets/galeria_2/2.png'
+// import logo from '../../assets/galeria_2/2.png'
 import IM81063 from '../../assets/imoveis/IM81063/0.jpg'
 import IM81709 from '../../assets/imoveis/IM81709/0.jpg'
 import im73832 from '../../assets/imoveis/IM73832/0.jpg'
