@@ -83,9 +83,6 @@ body {
 .link_rapidos > a:hover {
   color: #253066;
 }
-/* .copy {
-  display: flex;
-} */
 
 #header {
   display: grid;
@@ -163,24 +160,66 @@ body {
   display: none;
 }
 
-@media screen and (max-height:1600px){
-  .swiper_container_homepage{
-    height: 400px;
-  }
-  .swiper_slide_homepage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-  }
-
-}
-
 #mobile_creci{
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid div img{
+  width: 100%;
+  border-radius: 5px;
+}
+.grid div div{
+  font-size: x-large;
+  color: white;
+}
+.grid div a{
+  position: relative;
+}
+
+.grid div:last-child:nth-child(3n - 1) {
+  grid-row: span 2;
+  height: auto;
+  padding-bottom: 0;
+}
+
+.inside_image{
+  position: absolute;
+  left: 16px;
+  background-color: grey;
+  margin-top: 5%;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+@media screen and (max-width:480px){
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+  
+}
+
+@media screen and (max-width: 320px) { 
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
   #mobile_creci{
     display: flex;
     justify-content: center;
@@ -254,45 +293,4 @@ body {
   #banner{
     width:100%
   }
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid div img{
-  width: 100%;
-  border-radius: 5px;
-}
-.grid div div{
-  font-size: x-large;
-  color: white;
-}
-.grid div a{
-  position: relative;
-}
-
-.grid div:last-child:nth-child(3n - 1) {
-  grid-row: span 2;
-  height: auto;
-  padding-bottom: 0;
-}
-
-.inside_image{
-  position: absolute;
-  left: 16px;
-  background-color: grey;
-  margin-top: 5%;
-  padding: 10px 10px;
-  border-radius: 20px;
-  /* width: 100%; */
 }
