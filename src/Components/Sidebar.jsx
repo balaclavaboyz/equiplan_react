@@ -1,141 +1,40 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "react-pro-sidebar/dist/css/styles.css";
 import Img from "react-cool-img";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { Nav, Container, Row, Col } from "react-bootstrap";
-import { slide as Burger } from "react-burger-menu";
+// import { slide as Burger } from "react-burger-menu";
 
 const Sidebar = () => {
+const [isOpen, setIsOpen]=useState(false)
+const toggleMenu=()=>{
+    setIsOpen((open)=>!open)
+}
+
     return (
         <>
-            <div id="burger">
-                <Burger width={"150px"}>
-                    <Link to="/">Home</Link>
-                    <Link to="/imoveis">Imóveis</Link>
-                    <Link to="/faq">Faq</Link>
-                    <Link to="/contato">Contato</Link>
-                    <Link to="/missao">Missão</Link>
-                    <Link to="/politica">Política de Privacidade</Link>
-                </Burger>
-                <div className="center mt-2 mb-2">
-                    <Link to="/">
-                        <img
-                            src={logo}
-                            alt="link para homepage"
-                            style={{ width: 100 }}
-                        />
-                    </Link>
-                </div>
-            </div>
-            <Container className="mt-5" id="menu_principal">
-                <Row id="menu">
-                    <Col md="auto">
-                        <Link
-                            to="/"
-                            style={{
-                                color: "inherit",
-                                textDecoration: "inherit",
-                            }}
-                        >
-                            <Img src={logo} alt="logo" width="100px" />
-                        </Link>
-                    </Col>
-                    <Col>
-                        <Nav className="nav">
-                            <Nav.Item>
-                                <Nav.Link
-                                    as={Link}
-                                    to="/"
-                                    style={{
-                                        fontSize: "1rem",
-                                        color: "white",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    HOME
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link
-                                    as={Link}
-                                    to="imoveis"
-                                    style={{
-                                        fontSize: "1rem",
-                                        color: "white",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    IMÓVEIS
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link
-                                    as={Link}
-                                    to="faq"
-                                    style={{
-                                        fontSize: "1rem",
-                                        color: "white",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    FAQ
-                                </Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link
-                                    as={Link}
-                                    to="contato"
-                                    style={{
-                                        fontSize: "1rem",
-                                        color: "white",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    CONTATO
-                                </Nav.Link>
-                            </Nav.Item>
-                            {/* <Nav.Item>
-                                <Nav.Link
-                                    as={Link}
-                                    to="missao"
-                                    style={{
-                                        fontSize: "1rem",
-                                        color: "white",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    MISSÃO
-                                </Nav.Link>
-                            </Nav.Item> */}
-                            <Nav.Item>
-                                <Nav.Link
-                                    as={Link}
-                                    to="politica"
-                                    style={{
-                                        fontSize: "1rem",
-                                        color: "white",
-                                        fontWeight: "bold",
-                                    }}
-                                >
-                                    POLÍTICA DE PRIVACIDADE
-                                </Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                    </Col>
-                </Row>
-                <Row>
-                    <div id="header">
-                        <div id="creci">
-                            <p>
-                                <b>CRECI-J35272</b>
-                            </p>
-                        </div>
-                    </div>
-                </Row>
-            </Container>
+        <ul class='burger_ul'>
+            <a href="/">
+            <img src={logo} alt="home" style={{width:`100px`,height:`100px`}}/>
+            </a>
+            <li class={`burger${isOpen ? " isOpen":""}`}>
+                <Link onClick={toggleMenu} to="/">Home</Link>
+                <Link onClick={toggleMenu} to="/imoveis">Imóveis</Link>
+                <Link onClick={toggleMenu} to="/faq">Faq</Link>
+                <Link onClick={toggleMenu} to="/contato">Contato</Link>
+                {/* <Link onClick={toggleMenu} to="/missao">Missão</Link> */}
+                <Link onClick={toggleMenu} to="/politica">Política de Privacidade</Link>
+            </li>
+            <li class='mobile_menu' onClick={toggleMenu}>
+                <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                </div>  
+            </li>
+        </ul>
             <Container>
-                
                 <Row id='mobile_creci'>
                     <b style={{textAlign:'center'}}>CRECI-J35272</b>
                 </Row>
