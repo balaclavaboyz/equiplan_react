@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
 import IM83706 from '../../assets/imoveis/IM83706/0.png'
