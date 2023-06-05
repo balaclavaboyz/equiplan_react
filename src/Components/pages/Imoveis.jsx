@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
 import logo from '../../assets/galeria_2/2.png'
+import IM83801 from '../../assets/imoveis/IM83801/0.jpg'
 import IM81063 from '../../assets/imoveis/IM81063/0.jpg'
 import IM81709 from '../../assets/imoveis/IM81709/0.jpg'
 import im73832 from '../../assets/imoveis/IM73832/0.jpg'
@@ -18,6 +19,7 @@ export default function Imoveis() {
                 <div className="indice_imoveis_wrapper">
                     <div className="grid">
                         <span id='insert'></span>
+                        <div><a href="/IM83801"><div className="inside_image">IM83801</div><img src={IM83801} alt="link imovel IM83801" ></img></a></div>
                         <div><a href="/IM81063"><div className="inside_image">IM81063</div><img src={IM81063} alt="link imovel IM81063" ></img></a></div>
                         <div><a href="/IM81709"><div className="inside_image">IM81709</div><img src={IM81709} alt="link imovel IM81709" ></img></a></div>
                         <div><a href="/im73832"><div className="inside_image">IM73832</div><img src={im73832} alt="link imovel im73832" ></img></a></div>
