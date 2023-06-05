@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
-import logo from '../../assets/galeria_2/2.png'
-import IM83706 from '../../assets/imoveis/IM83706/0.jpg'
+import IM83706 from '../../assets/imoveis/IM83706/0.png'
 import IM83801 from '../../assets/imoveis/IM83801/0.jpg'
 import IM81063 from '../../assets/imoveis/IM81063/0.jpg'
 import IM81709 from '../../assets/imoveis/IM81709/0.jpg'
