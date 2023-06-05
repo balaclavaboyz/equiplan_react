@@ -5,18 +5,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import homebanner from '../assets/galeria_2/banner.png'
 
-function importAll(r) {
-    let images = {};
-    r.keys().forEach((item, index) => {
-        images[item.replace("./", "")] = r(item);
-    });
-    return images;
-}
+// function importAll(r) {
+//     let images = {};
+//     r.keys().forEach((item, index) => {
+//         images[item.replace("./", "")] = r(item);
+//     });
+//     return images;
+// }
 
-const galeria2 = importAll(
-    require.context("../assets/galeria_2", false, /\.(png|jpe?g|svg|webp)$/)
-);
+// const galeria2 = importAll(
+//     require.context("../assets/galeria_2", false, /\.(png|jpe?g|svg|webp)$/)
+// );
 
 const Galeria2 = () => {
     return (
@@ -39,11 +40,12 @@ const Galeria2 = () => {
                     ))}
                 </Swiper>
             </div> */}
-                    {Object.entries(galeria2).map((t, k) => (
+                    {/* {Object.entries(galeria2).map((t, k) => (
                             <div key={k[0]} className="center">
                                 <img src={t[1]} alt=""/>
                             </div>
-                    ))}
+                    ))} */}
+            <img src={homebanner} alt="banner da pagina inicial" />
         </>
     );
 };

@@ -2,9 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/table.css";
 import "../../assets/table.js";
+<<<<<<< HEAD
 import logo from '../../assets/galeria_2/2.png'
 import IM83364 from '../../assets/imoveis/IM83364/0.jpg'
 import IM83706 from '../../assets/imoveis/IM83706/0.jpg'
+=======
+import IM83706 from '../../assets/imoveis/IM83706/0.png'
+>>>>>>> 144554919bc8ca84d3cc4d79b67fb3ef2f1c6c32
 import IM83801 from '../../assets/imoveis/IM83801/0.jpg'
 import IM81063 from '../../assets/imoveis/IM81063/0.jpg'
 import IM81709 from '../../assets/imoveis/IM81709/0.jpg'
