@@ -19,6 +19,7 @@ export default function Imoveis() {
                 <div className="indice_imoveis_wrapper">
                     <div className="grid">
                         <span id='insert'></span>
+                        <div><a href="/IM83113"><div className="inside_image">IM83113</div><img src={IM83113} alt="link imovel IM83113" ></img></a></div>
                         <div><a href="/IM83364"><div className="inside_image">IM83364</div><img src={IM83364} alt="link imovel IM83364" ></img></a></div>
                         <div><a href="/IM83706"><div className="inside_image">IM83706</div><img src={IM83706} alt="link imovel IM83706" ></img></a></div>
                         <div><a href="/IM83801"><div className="inside_image">IM83801</div><img src={IM83801} alt="link imovel IM83801" ></img></a></div>
